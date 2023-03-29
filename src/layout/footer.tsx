@@ -38,39 +38,6 @@ export const Footer = () => {
           </Typography>
         </div>
         <div className="h-[45px]" />
-        {/* <div className="flex flex-col sm:flex-row justify-around items-center sm:items-start gap-y-[30px]">
-          <FooterCard
-            image={{
-              path: "calendar@2x.png",
-              width: 188,
-              height: 112,
-            }}
-            title="Schedule a Meeting"
-            desc="Let’s schedule a 15-minutes free consultation call. We are very eager to hear from you and collaborate"
-            buttonText="schedule"
-          />
-          <FooterCard
-            image={{
-              path: "message@2x.png",
-              width: 112,
-              height: 112,
-            }}
-            title="Send Message"
-            desc="Send us an in-site message and start live chatting."
-            buttonText="message"
-          />
-          <FooterCard
-            image={{
-              path: "email@2x.png",
-              width: 112,
-              height: 112,
-            }}
-            title="Email"
-            buttonText="send email"
-            desc="Send us an email about your project and we will get back to you as soon as possible."
-          />
-        </div> */}
-
         <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-around">
           <FooterCard
             image={{
@@ -81,6 +48,7 @@ export const Footer = () => {
             title="Schedule a Meeting"
             desc="Let’s schedule a 15-minutes free consultation call. We are very eager to hear from you and collaborate"
             buttonText="schedule"
+            type="meeting"
           />
           <FooterCard
             image={{
@@ -91,16 +59,18 @@ export const Footer = () => {
             title="Send Message"
             desc="Send us an in-site message and start a live chat."
             buttonText="message"
+            type="message"
           />
           <FooterCard
             image={{
-              path: "email@2x.png",
-              width: 112,
+              path: "email&Phone@2x.png",
+              width: 188,
               height: 112,
             }}
-            title="Email"
-            buttonText="send email"
+            title="Email & Phone"
+            buttonText="Contact Now"
             desc="Send us an email about your project and we will get back to you as soon as possible."
+            type="contact"
           />
         </div>
 

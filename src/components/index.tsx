@@ -6,3 +6,4 @@ export * from "./tag";
 export * from "./comment-card";
 export * from "./icon-button";
 export * from "./footer-card";
+export * from "./contactModal";

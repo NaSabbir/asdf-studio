@@ -44,6 +44,10 @@ module.exports = {
           cyan: "#a0efff",
           hoverOrange: "#e8665d",
           hoverWhite: "#f1f5f8",
+          textBox: "#eceff5",
+          modalTitle: "#012859",
+          modalTitleSecond: "#6c768b",
+          lightestBlue: "#f5f9fe",
         },
         border: {
           button: "rgba(255, 255, 255, 0.14)",
