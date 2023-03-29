@@ -97,7 +97,7 @@ export const FooterCard: FC<Props> = ({
         {buttonText}
       </Button>
 
-      {/* modal */}
+      {/* modal complte */}
 
       <Modal
         centered
