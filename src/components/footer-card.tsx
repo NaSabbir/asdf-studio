@@ -269,7 +269,7 @@ export const FooterCard: FC<Props> = ({
           </Typography>
           <Typography
               variant="title5"
-              classname="text-main-deepBlue pt-6"
+              classname="text-main-deepBlue pt-2"
             >
               Along with direct phone call,
               <span className="font-bold"> WhatsApp </span>

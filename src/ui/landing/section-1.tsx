@@ -356,14 +356,14 @@ export const SectionOne = () => {
         </div>
         <Image
           className="absolute -bottom-5 left-[325px] hidden sm:block absolute top-[1200px] sm:left-[20px] xl:left-[320px] xl:top-[1050px]"
-          src="/assets/landing/home/journal@2x.png"
+          src="/assets/landing/home/journal@3x.png"
           width={548}
           height={368}
           alt="journal image"
         />
         <Image
           className="absolute top-[1200px] -left-[65px] sm:hidden max-w-[493px] w-[493px]"
-          src="/assets/landing/home/journal@2x.png"
+          src="/assets/landing/home/journal@3x.png"
           width={493}
           height={332}
           alt="journal image"

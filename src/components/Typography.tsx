@@ -14,6 +14,7 @@ export type TypoVariants =
   | "heading5"
   | "label1"
   | "label2"
+  | "label3"
   | "title1"
   | "body2"
   | "title2"
@@ -60,6 +61,7 @@ export const Typography: FC<Props> = ({
     label1:
       "text-[13.5px] font-demi font-semibold leading-normal tracking-[0px]",
     label2: "text-[13.5px]  leading-normal tracking-[0.84px]",
+    label3: "text-[13.5px] tracking-[1.4px] leading-[15px] font-bold",
   };
 
   return (

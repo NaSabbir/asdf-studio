@@ -2,7 +2,7 @@ import { CommentSVG } from "icons";
 import { FC } from "react";
 import { Typography } from "./Typography";
 
-export type Colors = "orange" | "green" | "blue" | "lightBlue";
+export type Colors = "orange" | "green" | "blue" | "lightBlue" | "deepBlue" | "skyBlue" | "red" | "ashBlue";
 
 type Props = {
   comment: string;
@@ -22,6 +22,10 @@ export const CommentCard: FC<Props> = ({
     green: "#beffc4",
     blue: "#013e88",
     lightBlue: "#a0efff",
+    deepBlue: "#2f71c7",
+    skyBlue: "#d3e9f7",
+    red: "#f97066",
+    ashBlue: "#b3bfd7"
   };
 
   return (
