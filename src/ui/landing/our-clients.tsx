@@ -33,7 +33,7 @@ export const OurClients = () => {
     {
       url: "cannabox@2x.png",
       width: 141,
-      height: 81,
+      height: 61,
     },
   ];
 
@@ -118,20 +118,21 @@ export const OurClients = () => {
           >
             New Comers
           </Typography>
-          <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-center sm:justify-center">
+          <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-center items-center sm:justify-center">
             {clients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
                 src={"/assets/logos/Clients/" + url}
                 width={width}
                 height={height}
+                style={{ width: width, height: height }}
                 alt="logos"
                 className="object-contain"
               />
             ))}
           </div>
         </div>
-        <div className="border border-main-lightBlue w-[92%] mx-auto" />
+        <div className="border border-main-lightBlue w-[100%] mx-auto" />
         <div className="flex flex-col gap-5 sm:gap-[25px] w-full">
           <Typography
             variant="title-semi"
@@ -139,13 +140,14 @@ export const OurClients = () => {
           >
             Established Brands we have worked with
           </Typography>
-          <div className="flex sm:gap-x-[35px] sm:gap-y-[25px] gap-5 flex-wrap justify-center sm:justify-center">
+          <div className="flex sm:gap-x-[35px] sm:gap-y-[25px] gap-5 flex-wrap justify-center items-center sm:justify-center">
             {establishiedClients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
                 src={"/assets/logos/Clients/" + url}
                 width={width}
                 height={height}
+                style={{ width: width, height: height }}
                 alt="logos"
                 className="object-contain"
               />

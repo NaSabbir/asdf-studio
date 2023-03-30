@@ -77,6 +77,7 @@ export const FooterCard: FC<Props> = ({
           src={"/assets/landing/Footer/" + path}
           width={width}
           height={height}
+          style={{ width: width, height: height }}
           alt="image"
         />
       </div>

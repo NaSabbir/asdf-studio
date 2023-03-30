@@ -31,7 +31,8 @@ export const SectionTwo = () => {
           className="absolute top-[66px] -right-[180px] z-10 hidden sm:block right-[-376px] x:right-[-266px] xl:right-[-166px]"
           src="/assets/landing/Development/code@2x.png"
           width={722}
-          height={249}
+          height={255}
+          style={{ width: 722, height: 255 }}
           alt="web apps"
         />
         <Image
@@ -76,7 +77,8 @@ export const SectionTwo = () => {
         <Image
           className="absolute top-[673px] -left-[20px] z-10 hidden sm:block left-[10px] top-[683px]"
           width={322}
-          height={318}
+          height={306}
+          style={{ width: 322, height: 306 }}
           alt="java"
           src="/assets/landing/Development/java@2x.png"
         />
@@ -95,7 +97,7 @@ export const SectionTwo = () => {
           src="/assets/landing/Development/oop@2x.png"
         />
         <Image
-          className="absolute top-[1500px] left-[75px] z-0 sm:absolute top-[55px] left-[45px] z-0"
+          className="absolute top-[1500px] left-[75px] z-0 hidden sm:block absolute top-[455px] left-[95px] z-0 x:top-[45px] left-[35px] z-0"
           width={1392}
           height={1195}
           alt="path"

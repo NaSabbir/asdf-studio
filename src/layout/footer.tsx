@@ -26,6 +26,7 @@ export const Footer = () => {
               width={60}
               className="absolute -right-[55px] -top-[25px]"
               height={78}
+              style={{ width: 60, height: 78 }}
               alt="hearth emoji"
             />
           </div>
@@ -47,6 +48,8 @@ export const Footer = () => {
               height: 112,
             }}
             title="Schedule a Meeting"
+
+            
             desc="Let’s schedule a 15-minutes free consultation call. We are very eager to hear from you and collaborate"
             buttonText="schedule"
             type="meeting"
@@ -151,6 +154,7 @@ export const Footer = () => {
           src={"/assets/landing/Footer/footer@2x.png"}
           width={1080}
           height={351}
+          style={{ width: 1080, height: 351 }}
           alt="footer"
           className="mx-auto hidden sm:block"
         />
@@ -158,6 +162,7 @@ export const Footer = () => {
           src={"/assets/landing/Footer/footer-mobile@2x.png"}
           width={360}
           height={335}
+          style={{ width: 360, height: 335 }}
           alt="footer"
           className="mx-auto sm:hidden"
         />

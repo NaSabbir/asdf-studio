@@ -75,6 +75,7 @@ export const Portfolio = () => {
                 src={`/assets/landing/portfolio/${url}`}
                 width={421}
                 height={353}
+                style={{ width: 421, height: 353 }}
               />
             );
           })}
