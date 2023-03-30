@@ -111,6 +111,7 @@ export const Header = () => {
             
           ].join(" ")}
         > */}
+        <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={500}>
           <Button
             variant="secondary"
             className=
@@ -118,12 +119,12 @@ export const Header = () => {
             "fixed z-50 w-[300px] h-[40px] -translate-x-1/2 bottom-4 left-1/2 sm:hidden"
             typoVariant="title-semi-button"
           >
-            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={500}>
             Let’s Connect
-            </Link>
           </Button>
+          </Link>
         {/* </div> */}
          <div className='hidden sm:block x:block]'>
+         <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
           <Button
             variant="secondary"
             className=
@@ -131,10 +132,9 @@ export const Header = () => {
             "hidden sm:block fixed z-50 w-[200px] h-[40px] text-main-deepBlue bottom-10 left-6"
             typoVariant="body"
           >
-            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
             Let’s Connect
-            </Link>
           </Button>
+          </Link>
 
            <div className=
           //  'sm:fixed w-[325px] h-[35px] text-white bg-main-blue rounded-[20px] flex justify-center items-center inline-flex top-[670px] -right-[15%] rotate-90 x:-right-[10%] xl:top-[550px] xl:-right-[7%] 2xl:xl:top-[770px] 5xl:-right-[5%]'>

@@ -68,9 +68,13 @@ export const SectionOne = () => {
             variant="secondary"
             className="w-full sm:w-[225px] h-[45px] pt-1"
             typoVariant="title-semi-button"
+            onClick={() => 
+             window.open('https://capture.dropbox.com/LVw3RlbsBT8ig80M', '_blank') 
+            }
           >
             our services
           </Button>
+          <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
           <Button
             typoVariant="title-semi-button"
             endIcon={<ChevronRight className="fill-white -mt-1"/>}
@@ -78,6 +82,7 @@ export const SectionOne = () => {
           >
             start a project
           </Button>
+          </Link>
         </div>
       </div>
       <div className="h-[100px] hidden sm:block" />

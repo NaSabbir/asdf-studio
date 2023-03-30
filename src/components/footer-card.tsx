@@ -101,7 +101,7 @@ export const FooterCard: FC<Props> = ({
         className="w-[225px] h-[45px] shadow-buttonShadow2 pt-1"
         typoVariant="title-semi"
         onClick={() => 
-          type === "message" ? setMessageModalOpen(true) : type === "contact" ? setContactModalOpen(true) : null  
+          type === "message" ? setMessageModalOpen(true) : type === "contact" ? setContactModalOpen(true) : window.open('https://calendly.com/airlystudio/meeting', '_blank') 
         }
       >
         {buttonText}
