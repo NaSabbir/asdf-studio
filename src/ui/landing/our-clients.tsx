@@ -98,6 +98,7 @@ export const OurClients = () => {
 
   return (
     <div
+      id='clients'
       className={[
         "max-w-mobile sm:max-w-desktop-s mx-auto w-full relative z-10 xl:-mt-[120px]",
         padding,

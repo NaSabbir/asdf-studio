@@ -1,12 +1,13 @@
 import { Canvas, FooterCard, Typography } from "components";
 import { padding } from "../constants";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export const Footer = () => {
   return (
     <Canvas classname="bg-lightBlue">
       <div
+        id='contact_us'
         className={[
           "relative max-w-[1180px] 2xl:max-w-[1260px] w-full mx-auto z-20 pt-[60px]",
           padding,
@@ -76,57 +77,57 @@ export const Footer = () => {
 
         <div className="flex flex-col mt-[33px] sm:mt-[52px]">
           <div className="flex sm:gap-[22px] gap-5 mx-auto flex-col sm:flex-row items-center sm:items-start">
-            <Link href="#design">
+            <Link to={"design"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Design
               </Typography>
             </Link>
-            <Link href="#development">
+            <Link to={"development"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Development
               </Typography>
             </Link>
-            <Link href="#marketing">
+            <Link to={"marketing"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Marketing
               </Typography>
             </Link>
-            <Link href="#clients">
+            <Link to={"clients"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Clients
               </Typography>
             </Link>
-            <Link href="#process">
+            <Link to={"process"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Process
               </Typography>
             </Link>
-            <Link href="#testimonials">
+            <Link to={"testimonials"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Testimonials
               </Typography>
             </Link>
-            <Link href="#contact_us">
+            <Link href="#contact_us" to={"contact_us"} spy={true} smooth={true} offset={-60} duration={500}>
               <Typography
-                classname="uppercase text-main-deepBlue font-medium"
+                classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
               >
                 Contact Us

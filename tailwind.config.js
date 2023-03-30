@@ -7,7 +7,8 @@ module.exports = {
     screens: {
       sm: "767px", //mobile
       x: "1024px", //tablet
-      xl: "1280px", //laptop
+      xl: "1024px", //laptop
+      "1xl": "1230px", //laptop
       "2xl": "1440px", //desktop
       "5xl": "1920px", // ultra wide
       "360": "360px",

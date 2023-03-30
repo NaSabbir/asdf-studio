@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FC } from "react";
 import { Button } from "./button";
 import { Typography } from "./Typography";
-import { ContactModal } from './contactModal';
 import { Input, Modal } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faCircleXmark, faCopy } from '@fortawesome/free-solid-svg-icons';
@@ -39,6 +38,8 @@ export const FooterCard: FC<Props> = ({
   const [emptyName, setemptyName] = useState(false);
   const [emptyEmail, setemptyEmail] = useState(false);
   const [emptyMessage, setemptyMessage] = useState(false);
+  const [copySuccess, setCopySuccess] = useState('');
+  const [show, setShow] = useState(false);
 
   const onclickHandel = () => {
     name === '' ? setemptyName(true) : setemptyName(false)
@@ -60,6 +61,15 @@ export const FooterCard: FC<Props> = ({
     event.target.id === "company" ? setCompany(event.target.value) :
     event.target.id === "message" ? setMessage(event.target.value) : null
   };
+  const copyToClipBoard = async (copyMe: string) => {
+    try {
+      await navigator.clipboard.writeText(copyMe);
+      setCopySuccess('Copied');
+    } catch (err) {
+      setCopySuccess('Failed to copy!');
+    }
+  };
+
   return (
     <div className="max-w-full sm:max-w-[285px] w-full flex flex-col items-center sm:items-center xl:items-start">
       <div className="h-[114px] ml-2 mb-2">
@@ -240,14 +250,24 @@ export const FooterCard: FC<Props> = ({
             alt="image"
           />
         </div>
-
+        <div className="ml-2 mb-4 mt-6 flex gap-[5px] flex flex-row justify-between">
         <Typography
             variant="heading5"
             classname="text-main-deepBlue text-center pt-6"
           >
             {"Email"}
         </Typography>
-
+        {
+          show === false  ?
+            <Typography
+              variant="label1"
+              classname="text-main-orange text-center mt-7"
+            >
+              {copySuccess}
+            </Typography>
+          : null
+        }
+        </div>
         <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-2 border-main-lightBlue flex justify-between pr-3 pt-2">
             <Typography
@@ -256,7 +276,13 @@ export const FooterCard: FC<Props> = ({
               >
                 {"hello@airlystudio.com"}
             </Typography>
-            <FontAwesomeIcon icon={faCopy} style={{ fontSize: 20, color: "#f97066" }}/>
+
+            <FontAwesomeIcon onClick={() => {copyToClipBoard('hello@airlystudio.com'),
+            setTimeout(() => {
+              setShow(true)
+              }, 1500), setShow(false) }
+            } 
+            icon={faCopy} style={{ fontSize: 20, color: "#f97066", cursor: 'pointer' }}/>
           </div>
         </div>
         <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">

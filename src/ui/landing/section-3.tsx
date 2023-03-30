@@ -15,6 +15,7 @@ export const SectionThree = () => {
       bottomComp={BottomComp}
     >
       <div
+        id='marketing'
         className={[
           "mx-auto w-full relative h-[1550px] sm:h-[1150px] z-10 max-w-mobile  sm:max-w-desktop-s",
           padding,

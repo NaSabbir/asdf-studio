@@ -20,6 +20,7 @@ export const Proof = () => {
   return (
     <Canvas classname="bg-main-deepBlue" containerClassName="relative">
       <div
+        id='Process'
         className={[
           "relative h-[850px] max-w-[1180px] sm:h-[950px] 2xl:max-w-[1260px] w-full mx-auto z-20",
           padding,
@@ -75,9 +76,9 @@ export const Proof = () => {
             Please note that the following process is our usual approach for medium to large-scale projects that require both design and development. However, if we are working on simpler projects such as landing page or print design, some steps may be skipped. Additionally, please be aware that the process may vary for projects involving SEO, digital marketing, or animation.
           </Typography>
         </div>
-        <div className="h-[20px]" />
+        <div className="h-[20px]"/>
         <div className="h-[1px] bg-main-cyan"/>
-        <div className="h-[60px] sm:h-[30px]" />
+        <div className="h-[60px] sm:h-[30px]" id='testmonials'/>
         <div className="flex flex-col relative gap-[5px] sm:gap-[11px]">
           <Typography variant="heading3" classname="text-white opacity-35 sm:ml-[30px]">
             The Proof
@@ -128,7 +129,7 @@ export const Proof = () => {
           </div>
         </div>
       </div>
-      <div className="h-5 sm:h-[47px]" />
+      <div className="h-5 sm:h-[47px]"/>
       <ClientComments ref={sliderRef} />
       <div className="absolute top-0 z-10 left-0 h-[800px] 2xl:h-[480px] w-[2000px]">
         <Image src={"/assets/landing/Proof/cloud.webp"} fill alt="cloud background" />

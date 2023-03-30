@@ -24,7 +24,7 @@ export const Portfolio = () => {
 
   return (
     <Canvas classname="bg-greyBlue">
-      <div className="w-full relative h-[1730px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10">
+      <div className="w-full relative h-[1730px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10" id='portfolio'>
         <div className="w-fit mx-auto">
           <Typography variant="heading1" classname="text-main-deepBlue">
             Portfolio

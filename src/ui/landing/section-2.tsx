@@ -7,6 +7,7 @@ export const SectionTwo = () => {
   return (
     <Canvas classname="bg-main-deepBlue">
       <div
+      id='development'
         className={[
           "max-w-mobile sm:max-w-desktop-s mx-auto w-full relative h-[1670px] 390:h-[1780px] 420:h-[1810px] 430:h-[1930px] sm:h-[1660px] x:h-[1700px] xl:h-[1560px]",
           padding,
