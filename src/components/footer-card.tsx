@@ -312,7 +312,7 @@ export const FooterCard: FC<Props> = ({
               variant="title5"
               classname="text-main-deepBlue text-start pl-3 sm:text-center"
               >
-                {"HR & Operations"}
+                {"Operations"}
             </Typography>
             <Typography
               variant="title4"
