@@ -16,7 +16,7 @@ export const SectionOne = () => {
       // containerClassName="px-5"
       bottomComp={BottomComp}
     >
-      <div className="relative mx-auto w-fit h-[853px] sm:h-auto" id='design'>
+      <div className="relative mx-auto w-fit h-[853px] sm:h-auto" id='home'>
         {/* <Image
           src="/assets/landing/notebook.svg"
           width={1080}
@@ -64,9 +64,9 @@ export const SectionOne = () => {
           ].join(" ")}
         >
           <Button
-            endIcon={<ChevronRight className="fill-main-blue -mt-1" />}
+            endIcon={<ChevronRight className="fill-main-blue" />}
             variant="secondary"
-            className="w-full sm:w-[225px] h-[45px] pt-1"
+            className="w-full sm:w-[225px] h-[45px]"
             typoVariant="title-semi-button"
             onClick={() => 
              window.open('https://capture.dropbox.com/LVw3RlbsBT8ig80M', '_blank') 
@@ -77,8 +77,8 @@ export const SectionOne = () => {
           <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
           <Button
             typoVariant="title-semi-button"
-            endIcon={<ChevronRight className="fill-white -mt-1"/>}
-            className="w-full hover:bg-main-hoverOrange sm:w-[225px] h-[45px] shadow-buttonShadow4 pt-1"
+            endIcon={<ChevronRight className="fill-white"/>}
+            className="w-full hover:bg-main-hoverOrange sm:w-[225px] h-[45px] shadow-buttonShadow4"
           >
             start a project
           </Button>
@@ -122,8 +122,8 @@ export const SectionOne = () => {
             <Button
               variant="square"
               typoVariant="label"
-              className="hidden sm:block pt-1 absolute sm:top-[185px] sm:right-[55px] x:pt-1 absolute x:top-[185px] x:right-[305px] xl:pt-1 absolute xl:top-[185px] xl:right-[305px] w-[170px] h-[23.9px]"
-              endIcon={<ArrowRight className="fill-main-red text-[10.5px] -mt-1"/>}
+              className="hidden sm:block absolute sm:top-[185px] sm:right-[55px] x:absolute x:top-[185px] x:right-[305px] xl:absolute xl:top-[185px] xl:right-[305px] w-[170px] h-[23.9px]"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
             >
                 Landing Page design
           </Button>
@@ -133,6 +133,7 @@ export const SectionOne = () => {
             alt="box"
             width={665}
             height={408}
+            style={{ width: 665, height: 408 }}
             src="/assets/landing/home/box@2x.png"
           />
          <Image
@@ -146,8 +147,8 @@ export const SectionOne = () => {
            <Button
             variant="square"
             typoVariant="label"
-            className="top-[105px] right-[85px] absolute w-[163px] h-[23.9px] sm:hidden pt-1"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px] -mt-1"/>}
+            className="top-[105px] right-[85px] absolute w-[163px] h-[23.9px] sm:hidden"
+            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
           >
               EXPLORE WEB DESIGN
           </Button>
@@ -156,8 +157,8 @@ export const SectionOne = () => {
           <Button
             variant="square"
             typoVariant="label"
-            className="flex items-center top-[25px] right-[107px] absolute hidden pt-1 sm:block mt-1 sm:top-[70px] sm:right-[500px] x:top-[70px] x:right-[700px] xl:right-[675px] xl:top-[120px] w-[130px] h-[23.9px]"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px] -mt-1"/>}
+            className="flex items-center top-[25px] right-[107px] absolute hidden sm:block sm:top-[70px] sm:right-[500px] x:top-[70px] x:right-[700px] xl:right-[675px] xl:top-[120px] w-[130px] h-[23.9px]"
+            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
           >
               ILLSUTRATIONS
           </Button>
@@ -211,8 +212,8 @@ export const SectionOne = () => {
           <Button
             variant="square"
             typoVariant="label"
-            className="w-[167px] h-[22.4px] absolute -bottom-[10%] left-[9%] hidden sm:block pt-1"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px] -mt-1"/>}
+            className="w-[167px] h-[22.4px] absolute -bottom-[10%] left-[9%] hidden sm:block"
+            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
           >
               EXPLORE WEB DESIGN
             </Button>
@@ -248,8 +249,8 @@ export const SectionOne = () => {
           <Button
             variant="square"
             typoVariant="label"
-            className="w-[117px] h-[22.4px] absolute bottom-[31%] -left-[19%] hidden sm:block pt-1"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px] -mt-1"/>}
+            className="w-[117px] h-[22.4px] absolute bottom-[31%] -left-[19%] hidden sm:block"
+            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
           >
               Sleeveless
           </Button>
@@ -347,7 +348,7 @@ export const SectionOne = () => {
 
         {/* Design secion*/}
 
-        <div className="absolute left-[5px] top-[770px] sm:absolute sm:left-[100px] sm:top-[850px] sm:top-0 sm:bottom-[373px] flex flex-col max-w-[465px] w-full px-5 xl:left-[400px] xl:top-[700px]">
+        <div id='design' className="absolute left-[5px] top-[770px] sm:absolute sm:left-[100px] sm:top-[850px] sm:top-0 sm:bottom-[373px] flex flex-col max-w-[465px] w-full px-5 xl:left-[400px] xl:top-[700px]">
         {/* <div className="absolute left-[5px] top-[780px] sm:absolute flex flex-col"> */}
           <Typography variant="heading1" classname="text-main-deepBlue">
             Design
@@ -365,8 +366,8 @@ export const SectionOne = () => {
             </div>
             <Button
               typoVariant="title-semi-button"
-              endIcon={<ChevronRight className="fill-white -mt-1" />}
-              className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4 pt-1"
+              endIcon={<ChevronRight className="fill-white" />}
+              className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
             >
               Start a Design Project
             </Button>

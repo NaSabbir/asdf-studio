@@ -48,8 +48,8 @@ export const SectionThree = () => {
             </div>
             <Button
               typoVariant="title-semi-button"
-              endIcon={<ChevronRight className="fill-white -mt-1"/>}
-              className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4 pt-1"
+              endIcon={<ChevronRight className="fill-white"/>}
+              className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
             >
               Start a Design Project
             </Button>

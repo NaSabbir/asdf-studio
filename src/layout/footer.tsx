@@ -139,13 +139,12 @@ export const Footer = () => {
           </div>
           <div className="max-w-[322px] w-full mx-auto text-center mt-[24px]">
             <Typography variant="body2" classname="text-main-deepBlue">
-              Suite 4C Origin, Spring Gardens, Manchester, M2 2BQ, UK 44/A Judge
-              Court Road, Cumilla, Bangladesh
+              44/A Judge Court Road, Cumilla, Bangladesh
             </Typography>
           </div>
           <div className="max-w-[477px] w-full mx-auto text-center mt-[10px]">
             <Typography variant="body2" classname="text-main-deepBlue">
-              © 2014-2022 Airly Studio, LLC. All rights reserved. Trademarks and
+              © 2014-2023 Airly Studio, LLC. All rights reserved. Trademarks and
               brands are the property of their respective owners.
             </Typography>
           </div>

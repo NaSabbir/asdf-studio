@@ -42,8 +42,8 @@ export const Portfolio = () => {
             <div className={"flex w-full justify-center sm: top-[180px]"}>
             <Button
               typoVariant="title-semi-button"
-              endIcon={<ChevronRight className="fill-white -mt-1"/>}
-              className="w-[300px] max-w-[300px] h-[45px] shadow-buttonShadow4 pt-1 mb-5 hover:bg-main-hoverOrange xl:hidden"
+              endIcon={<ChevronRight className="fill-white"/>}
+              className="w-[300px] max-w-[300px] h-[45px] shadow-buttonShadow4 mb-5 hover:bg-main-hoverOrange xl:hidden"
             >
               Our Portfolio
             </Button>
@@ -59,8 +59,8 @@ export const Portfolio = () => {
             <Link href="https://airlystudio.myportfolio.com/" target="_blank" rel="noopener noreferrer">
               <Button
                 typoVariant="title-semi-button"
-                endIcon={<ChevronRight className="fill-white -mt-1"/>}
-                className="w-[300px] hover:bg-main-hoverOrange hidden xl:block max-w-[300px] h-[45px] shadow-buttonShadow4 pt-1 mt-5"
+                endIcon={<ChevronRight className="fill-white"/>}
+                className="w-[300px] hover:bg-main-hoverOrange hidden xl:block max-w-[300px] h-[45px] shadow-buttonShadow4 mt-5"
               >
                 Our Portfolio
               </Button>
@@ -83,8 +83,8 @@ export const Portfolio = () => {
         <div className="relative -bottom-[1150px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
         <Button
           typoVariant="title-semi-button"
-          endIcon={<ChevronRight className="fill-white -mt-1"/>}
-          className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2 pt-1 sm:hidden"
+          endIcon={<ChevronRight className="fill-white"/>}
+          className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2y sm:hidden"
         >
           OUR PORTFOLIO
         </Button>

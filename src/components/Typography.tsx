@@ -35,12 +35,12 @@ export const Typography: FC<Props> = ({
   classname = "",
 }) => {
   const variantMapping: Record<TypoVariants, string> = {
-    label: "text-[10.5px] tracking-[1.4px] leading-[24px] font-bold",
+    label: "text-[10px] tracking-[1.4px] leading-[24px] font-bold",
     title: "text-[16px] font-medium leading-[24px] tracking-[1.5px]",
     "title-semi":
-      "text-[20px] sm:text-[15px] font-semibold leading-normal sm:leading-[24px] tracking-[5px] sm:tracking-[1.5px] font-demi",
+      "text-[14px] sm:text-[14px] font-semibold leading-normal sm:leading-[24px] tracking-[5px] sm:tracking-[1.5px] font-demi",
     "title-semi-button":
-      "text-[15px] font-semibold leading-[24px] tracking-[1.5px] font-demi",
+      "text-[14px] font-semibold leading-[24px] tracking-[1.5px] font-demi",
     title1: "text-[16px] leading-[20px] sm:tracking-[0.5px] tracking-normal",
     title2: "text-[30px] leading-[50px] -tracking-[0.82px]",
     title3: "text-[16px] leading-[20px] tracking-[1.5px] font-sans",
@@ -61,7 +61,7 @@ export const Typography: FC<Props> = ({
     label1:
       "text-[13.5px] font-demi font-semibold leading-normal tracking-[0px]",
     label2: "text-[13.5px]  leading-normal tracking-[0.84px]",
-    label3: "text-[13.5px] tracking-[1.4px] leading-[15px] font-bold",
+    label3: "text-[14px] font-light tracking-normal leading-[15px]",
   };
 
   return (

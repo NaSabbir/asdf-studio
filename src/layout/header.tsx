@@ -49,7 +49,7 @@ export const Header = () => {
             // screen,
           ].join(" ")}
         >            
-        <Link to={"design"} spy={true} smooth={true} offset={-60} duration={500} className='cursor-pointer'>
+        <Link to={"home"} spy={true} smooth={true} offset={-60} duration={500} className='cursor-pointer'>
           <AirlyLogo />
         </Link>
           <div className="flex gap-3">
@@ -62,12 +62,12 @@ export const Header = () => {
                   </Button>
                 ))}
             </div>
-            <div className="p-3">
-              <Button variant="primary" className="hover:bg-main-hoverOrange w-[140px] h-[40px] sm:w-[200px] h-[40px]">
+            <div className="mr-3">
               <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-                Portfolio
-              </Link>
-              </Button>
+                <Button variant="primary" className="hover:bg-main-hoverOrange w-[140px] h-[40px] sm:w-[200px] h-[40px]">
+                  Portfolio
+                </Button>
+                </Link>
             </div>
             <div className="flex text-center 1xl:hidden flex text-center justify-center">
               <i className="w-[1px] h-[40px] border-r-2 border-lightBlue mr-3 mt-3"/>

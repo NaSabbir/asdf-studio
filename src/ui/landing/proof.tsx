@@ -68,12 +68,15 @@ export const Proof = () => {
           padding,
         ].join(" ")}
       >
-        <div className="w-full sm:w-[570px] sm:ml-[30px]">
+        <div className="w-full sm:w-[600px] sm-h-[76] sm:ml-[30px]">
           <Typography
             variant="label3"
-            classname="tracking-normal text-main-cyan font-book font-normal"
+            classname="text-main-cyan"
           >
-            Please note that the following process is our usual approach for medium to large-scale projects that require both design and development. However, if we are working on simpler projects such as landing page or print design, some steps may be skipped. Additionally, please be aware that the process may vary for projects involving SEO, digital marketing, or animation.
+            Please note that the following process is our usual approach for medium to large-scale projects<br/>
+            that require both design and development. However, if we are working on simpler projects<br/>
+            such as landing page or print design, some steps may be skipped. Additionally, please be<br/>
+            aware that the process may vary for projects involving SEO, digital marketing, or animation.
           </Typography>
         </div>
         <div className="h-[20px]"/>
