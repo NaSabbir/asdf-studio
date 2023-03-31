@@ -3,7 +3,7 @@ name: Deploy Airly Staging
 on:
   push:
     branches:
-      - staging 
+      - develop 
 
 jobs:
   deploy:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: staging 
+          ref: develop 
       - name: deploy Airly staging
         uses: appleboy/ssh-action@master 
         with:
