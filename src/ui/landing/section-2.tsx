@@ -2,6 +2,7 @@ import { Button, Canvas, Tag, Typography } from "components";
 import { padding } from "../../constants";
 import { ChevronRight } from "icons";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 export const SectionTwo = () => {
   return (
@@ -65,6 +66,7 @@ export const SectionTwo = () => {
               <Tag variant="white" text="E-Commerce" />
               <Tag variant="white" text="Data Science" />
             </div>
+            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
             <Button
               typoVariant="title-semi-button"
               endIcon={<ChevronRight className="fill-white"/>}
@@ -72,6 +74,7 @@ export const SectionTwo = () => {
             >
               Start a Design Project
             </Button>
+            </Link>
           </div>
         </div>
         <Image

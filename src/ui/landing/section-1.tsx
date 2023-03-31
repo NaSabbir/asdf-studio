@@ -364,6 +364,7 @@ export const SectionOne = () => {
               <Tag text="3D Modeling & Rendering" />
               <Tag text="Architectural Design" />
             </div>
+            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
             <Button
               typoVariant="title-semi-button"
               endIcon={<ChevronRight className="fill-white" />}
@@ -371,6 +372,7 @@ export const SectionOne = () => {
             >
               Start a Design Project
             </Button>
+            </Link>
           </div>
         </div>
         <Image

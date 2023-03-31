@@ -3,6 +3,7 @@ import { padding } from "../../constants";
 import { ChevronRight } from "icons";
 import Image from "next/image";
 import { OurClients } from "./our-clients";
+import { Link } from "react-scroll";
 
 const BottomComp = (
   <div className="bg-lightBlue h-[750px] absolute top-0 z-0 w-full" />
@@ -46,6 +47,7 @@ export const SectionThree = () => {
               <Tag variant="blue" text="Branding" />
               <Tag variant="blue" text="Email Marketing" />
             </div>
+            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
             <Button
               typoVariant="title-semi-button"
               endIcon={<ChevronRight className="fill-white"/>}
@@ -53,6 +55,7 @@ export const SectionThree = () => {
             >
               Start a Design Project
             </Button>
+            </Link>
           </div>
         </div>
         <Image
