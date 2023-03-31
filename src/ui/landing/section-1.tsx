@@ -25,38 +25,14 @@ export const SectionOne = () => {
           alt="notebook image"
         /> */}
 
-          <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimation.svg" className="hidden x:block w-[1080px] h-[676px]"></object>
-          <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimation.svg" className="hidden sm:block w-[768px] h-[478px] x:hidden"></object>
+          <object type="image/svg+xml" data="/HeroAnimation.svg" className="hidden x:block w-[1080px] h-[676px]"></object>
+          <object type="image/svg+xml" data="/HeroAnimation.svg" className="hidden sm:block w-[768px] h-[478px] x:hidden"></object>
           {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="w-[auto] h-[auto] sm:hidden"></object> */}
           {/* 360 */}
           {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="360:w-[auto] h-[auto] object-contain sm:hidden"></object> */}
           {/* 390 */}
-          <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="w-[100%] h-[80%] 360:w-[auto] 360:h-[auto] 375:w-[102%] 375:h-[auto] 390:w-[102%] 390:h-[100%] 420:w-[102%] 420:h-[108%] 430:w-[106%] 430:h-[110%] sm:hidden"></object>
+          <object type="image/svg+xml" data="/HeroAnimationMobile.svg" className="w-[100%] h-[80%] 360:w-[auto] 360:h-[auto] 375:w-[102%] 375:h-[auto] 390:w-[102%] 390:h-[100%] 420:w-[102%] 420:h-[108%] 430:w-[106%] 430:h-[110%] sm:hidden"></object>
           
-          {/* 414 & 428 */}
-          {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="hidden 420:w-[102%] h-[104%] object-contain sm:hidden"></object> */}
-   
-        {/* <Image
-          src="/assets/landing/mobile-hero.svg"
-          width={567}
-          height={679}
-          className="sm:hidden"
-          alt="notebook image"
-        /> */}
-        {/* <div
-          className={[
-            "flex w-full justify-center absolute bottom-[250px] sm:hidden",
-            padding,
-          ].join(" ")}
-        >
-          <Button
-            variant="secondary"
-            className="w-full sm:w-[225px] h-[45px]"
-            typoVariant="title-semi-button"
-          >
-            Let’s Connect
-          </Button>
-        </div> */}
         <div
           className={[
             "flex w-full justify-center absolute sm:bottom-[-15px] gap-5 flex-col sm:flex-row xl:bottom-[45px]",
@@ -89,14 +65,14 @@ export const SectionOne = () => {
         <div className="absolute sm:-left-[60px] sm:top-[50px] left-[48px] z-10">
           <Image
             className="hidden relative sm:block -right-[-170px] xl:-right-[5px]"
-            src="/assets/landing/home/custom-cards@2x.png"
+            src="/custom-cards@2x.png"
             width={375}
             height={209}
             alt="custom cards"
           />
           <Image
             className="sm:hidden"
-            src="/assets/landing/home/custom-cards@2x.png"
+            src="/custom-cards@2x.png"
             width={262}
             height={146}
             alt="custom cards"
@@ -105,14 +81,14 @@ export const SectionOne = () => {
         <div className="absolute sm:left-[-180px] sm:top-0 top-[130px] left-5 w-full z-10">
           <Image
             className="hidden relative left-[400px] sm:block x:left-[530px] xl:left-[660px]"
-            src="/assets/landing/home/emojis@2x.png"
+            src="/emojis@2x.png"
             width={235}
             height={292}
             alt="emojis"
           />
           <Image
             className="sm:hidden absolute top-[10px]"
-            src="/assets/landing/home/emojis@2x.png"
+            src="/emojis@2x.png"
             width={153}
             height={191}
             alt="emojis"
@@ -133,14 +109,14 @@ export const SectionOne = () => {
             width={665}
             height={408}
             style={{ width: 665, height: 408 }}
-            src="/assets/landing/home/box@2x.png"
+            src="/box@2x.png"
           />
          <Image
             className="absolute -top-[40px] sm:hidden max-w-[500px] w-[500px] left-[70px]"
             alt="box"
             width={270}
             height={285}
-            src="/assets/landing/home/box@2x.png"
+            src="/box@2x.png"
           />
           <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
            <Button
@@ -176,7 +152,7 @@ export const SectionOne = () => {
         <div className="absolute top-[75px] left-5 sm:top-[0px] sm:-left-[7px] flex gap-[22px]">
           <Image
             className="mt-[30px] hidden xl:block"
-            src="/assets/landing/Home/services@2x.png"
+            src="/services@2x.png"
             width={242}
             height={244}
             alt="services"
@@ -203,7 +179,7 @@ export const SectionOne = () => {
         <div className="absolute left-5 -top-[5px] sm:top-[18.9px] sm:left-[320px] flex flex-col w-full xl:left-[620px]">
           <Image
             className="hidden sm:block"
-            src="/assets/landing/home/web-design@2x.png"
+            src="/web-design@2x.png"
             width={409}
             height={97}
             alt="web design"
@@ -220,7 +196,7 @@ export const SectionOne = () => {
           </Link>
           <Image
             className="sm:hidden"
-            src="/assets/landing/home/web-design@2x.png"
+            src="/web-design@2x.png"
             width={286}
             height={67}
             alt="web design"
@@ -240,7 +216,7 @@ export const SectionOne = () => {
         <div className="absolute top-[1490px] -right-[200px] sm:right-[-180px] sm:top-[350px] flex flex-col xl:right-[10px] xl:top-[190px]">
           <Image
             className=""
-            src="/assets/landing/home/music-app@2x.png"
+            src="/music-app@2x.png"
             width={259}
             height={408}
             alt="music app"
@@ -258,28 +234,28 @@ export const SectionOne = () => {
         </div>
         <Image
           className="absolute top-[151px] right-[320px] hidden sm:block top-[160px] sm:right-[60px] xl:right-[320px]"  
-          src="/assets/landing/home/tacos@2x.png"
+          src="/tacos@2x.png"
           width={200}
           height={274}
           alt="taco image"
         />
         <Image
           className="absolute sm:hidden top-[250px] -right-[70px]"
-          src="/assets/landing/home/tacos@2x.png"
+          src="/tacos@2x.png"
           width={200}
           height={274}
           alt="taco image"
         />
         <Image
           className="absolute top-[366px] left-[167px] hidden sm:block absolute left-[20px] xl:left-[160px]"
-          src="/assets/landing/home/branding@2x.png"
+          src="/branding@2x.png"
           width={285}
           height={140}
           alt="branding image"
         />
         <Image
           className="absolute top-[630px] right-[28px] sm:hidden"
-          src="/assets/landing/home/branding@2x.png"
+          src="/branding@2x.png"
           width={199}
           height={97}
           alt="branding image"
@@ -298,11 +274,11 @@ export const SectionOne = () => {
           height={377}
           alt="devices image"
         /> */}
-        <object type="image/svg+xml" data="/assets/landing/SVG/diverse-design.svg" className="hidden xl:block w-[322px] h-[429px] absolute left-[480px] xl:absolute top-[250px]"></object>
-        <object type="image/svg+xml" data="/assets/landing/SVG/diverse-design.svg" className="hidden sm:block absolute w-[283px] h-[377px] z-20 left-[280px] sm:top-[300px] x:left-[380px] xl:hidden"></object>
+        <object type="image/svg+xml" data="/diverse-design.svg" className="hidden xl:block w-[322px] h-[429px] absolute left-[480px] xl:absolute top-[250px]"></object>
+        <object type="image/svg+xml" data="/diverse-design.svg" className="hidden sm:block absolute w-[283px] h-[377px] z-20 left-[280px] sm:top-[300px] x:left-[380px] xl:hidden"></object>
         <Image
           className="absolute top-[300px] left-[78px] z-20 sm:hidden"
-          src="/assets/landing/home/devices@2x.png"
+          src="/devices@2x.png"
           width={254}
           height={339}
           alt="devices image"
@@ -310,14 +286,14 @@ export const SectionOne = () => {
         <div className="absolute top-[570px] sm:top-[540px] -left-[105px] sm:left-[20px] sm:top-[560px] flex flex-col xl:left-[110px]">
           <Image
             className="hidden sm:block"
-            src="/assets/landing/home/dashboard@2x.png"
+            src="/dashboard@2x.png"
             width={303}
             height={236}
             alt="web design"
           />
           <Image
             className="sm:hidden"
-            src="/assets/landing/home/dashboard@2x.png"
+            src="/dashboard@2x.png"
             width={242}
             height={188}
             alt="web design"
@@ -333,14 +309,14 @@ export const SectionOne = () => {
         </div>
         <Image
           className="absolute top-[577px] right-[167px] hidden sm:block top-[710px] sm:left-[390px] xl:left-[780px] xl:top-[580px]"
-          src="/assets/landing/home/ui-design@2x.png"
+          src="/ui-design@2x.png"
           width={336}
           height={93}
           alt="ui design image"
         />
         <Image
           className="absolute top-[420px] left-[23px] sm:hidden"
-          src="/assets/landing/home/ui-design-mobile@2x.png"
+          src="/ui-design-mobile@2x.png"
           width={147}
           height={128}
           alt="ui design image"
@@ -377,49 +353,49 @@ export const SectionOne = () => {
         </div>
         <Image
           className="absolute -bottom-5 left-[325px] hidden sm:block absolute top-[1200px] sm:left-[20px] xl:left-[320px] xl:top-[1050px]"
-          src="/assets/landing/home/journal@3x.png"
+          src="/journal@3x.png"
           width={548}
           height={368}
           alt="journal image"
         />
         <Image
           className="absolute top-[1200px] -left-[65px] sm:hidden max-w-[493px] w-[493px]"
-          src="/assets/landing/home/journal@3x.png"
+          src="/journal@3x.png"
           width={493}
           height={332}
           alt="journal image"
         />
         <Image
           className="absolute hidden sm:block absolute bottom-[300px] -left-[390px] xl:left-[-130px] xl:top-[920px]"
-          src="/assets/landing/home/journal1@2x.png"
+          src="/journal1@2x.png"
           width={463}
           height={363}
           alt="journal image"
         />
         <Image
           className="absolute bottom-[400px] right-[36px] hidden sm:block left-[620px] sm:top-[810px] xl:left-[960px] xl:top-[760px]"
-          src="/assets/landing/home/balance-cards@2x.png"
+          src="/balance-cards@2x.png"
           width={290}
           height={226}
           alt="journal image"
         />
         <Image
           className="absolute top-[1760px] left-[46px] z-20 sm:hidden"
-          src="/assets/landing/home/balance-cards@2x.png"
+          src="/balance-cards@2x.png"
           width={205}
           height={159}
           alt="journal image"
         />
         <Image
           className="absolute -bottom-[110px] -right-[185px] hidden sm:block absolute left-[540px] bottom-[1px] xl:left-[800px] top-[1050px]"
-          src="/assets/landing/home/dashboard-1@2x.png"
+          src="/dashboard-1@2x.png"
           width={663}
           height={462}
           alt="dashboard image"
         />
         <Image
           className="absolute top-[1466px] -left-[130px] sm:hidden max-w-[464px] w-[464px]"
-          src="/assets/landing/home/dashboard-1@2x.png"
+          src="/dashboard-1@2x.png"
           width={464}
           height={323}
           alt="dashboard image"

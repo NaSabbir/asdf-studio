@@ -74,7 +74,7 @@ export const FooterCard: FC<Props> = ({
     <div className="max-w-full sm:max-w-[285px] w-full flex flex-col items-center sm:items-center xl:items-start">
       <div className="h-[114px] ml-2 mb-2">
         <Image
-          src={"/assets/landing/Footer/" + path}
+          src={"/" + path}
           width={width}
           height={height}
           style={{ width: width, height: height }}
@@ -130,7 +130,7 @@ export const FooterCard: FC<Props> = ({
       >
         <div className="ml-4 mb-2 flex gap-[17.5px] flex-wrap sm:flex-row">
           <Image
-            src={"/assets/landing/Footer/" + path}
+            src={"/" + path}
             width={70}
             height={70}
             alt="image"
@@ -247,7 +247,7 @@ export const FooterCard: FC<Props> = ({
       >
         <div className="ml-2 flex gap-[17.5px]">
           <Image
-            src={"/assets/landing/Footer/" + path}
+            src={"/" + path}
             width={189}
             height={113}
             alt="image"
@@ -307,44 +307,44 @@ export const FooterCard: FC<Props> = ({
                 are also available
             </Typography>
           
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-start pl-3 sm:text-center"
               >
                 {"HR & Operations"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-end whitespace-nowrap"
               >
-                {"+880 18 9154 7896"}
+                {"+880 189154 7896"}
             </Typography>
           </div>
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-start pl-3 sm:text-center"
               >
                 {"Dev Team"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-end whitespace-nowrap"
               >
                 {"+880 16 1699 2233"}
             </Typography>
           </div>
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-start pl-3 sm:text-center"
               >
                 {"Design Team"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue text-end whitespace-nowrap"
               >
                 {"+880 18 9154 7896"}
             </Typography>
@@ -365,7 +365,7 @@ export const FooterCard: FC<Props> = ({
       >
         <div className="ml-2 mb-2 mt-4 flex flex-wrap sm:flex-column justify-center">
           <Image
-            src={"/assets/landing/SVG/hearth.svg"}
+            src={"/hearth.svg"}
             width={105}
             className="justify-center"
             height={105}

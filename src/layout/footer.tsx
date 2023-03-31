@@ -22,7 +22,7 @@ export const Footer = () => {
               Let’s Connect
             </Typography>
             <Image
-              src={"/assets/landing/Footer/thunder@2x.png"}
+              src={"/thunder@2x.png"}
               width={60}
               className="absolute -right-[55px] -top-[25px]"
               height={78}
@@ -150,7 +150,7 @@ export const Footer = () => {
           </div>
         </div>
         <Image
-          src={"/assets/landing/Footer/footer@2x.png"}
+          src={"/footer@2x.png"}
           width={1080}
           height={351}
           style={{ width: 1080, height: 351 }}
@@ -158,7 +158,7 @@ export const Footer = () => {
           className="mx-auto hidden sm:block"
         />
         <Image
-          src={"/assets/landing/Footer/footer-mobile@2x.png"}
+          src={"/footer-mobile@2x.png"}
           width={360}
           height={335}
           style={{ width: 360, height: 335 }}

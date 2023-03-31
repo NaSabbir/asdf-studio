@@ -74,10 +74,10 @@ export const Portfolio = () => {
                 className={classname}
                 alt="image"
                 key={index}
-                src={`/assets/landing/portfolio/${url}`}
+                src={`/${url}`}
                 width={421}
                 height={353}
-                style={{ width: 421, height: 353 }}
+                // style={{ width: 421, height: 353 }}
               />
             );
           })}

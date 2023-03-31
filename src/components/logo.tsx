@@ -1,7 +1,7 @@
 import Image from "next/image";
-import airlylogo from "../../public/assets/logos/airly-logo.svg";
-import mobileMenu from "../../public/assets/logos/mobileMenu.svg";
-import mobileCancel from "../../public/assets/logos/mobileCancel.svg";
+import airlylogo from "../../public/airly-logo.svg";
+import mobileMenu from "../../public/mobileMenu.svg";
+import mobileCancel from "../../public/mobileCancel.svg";
 
 export const AirlyLogo = () => {
   return <Image src={airlylogo} width={82} height={40} alt="airly logo" className="ml-3"/>;

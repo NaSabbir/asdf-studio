@@ -52,11 +52,11 @@ export const Proof = () => {
           width={1063}
           height={808}
         /> */}
-        <object type="image/svg+xml" data="/assets/landing/SVG/process.svg" className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden sm:block top-[175px]"></object>
+        <object type="image/svg+xml" data="/process.svg" className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden sm:block top-[175px]"></object>
         <Image
           alt="mountain mobile"
           className="left-1/2 transform absolute -translate-x-1/2 top-[270px] max-w-[768px] sm:hidden z-20"
-          src="/assets/landing/Proof/mountain-mobile@2x.png"
+          src="/mountain-mobile@2x.png"
           width={768}
           height={638}
         />
@@ -97,14 +97,14 @@ export const Proof = () => {
                 our beloved clients
               </Typography>
               <Image
-                src={"/assets/landing/SVG/hearth.svg"}
+                src={"/hearth.svg"}
                 width={105}
                 className="absolute left-[22%] -top-[30px] hidden sm:block"
                 height={105}
                 alt="hearth emoji"
               />
               <Image
-                src={"/assets/landing/SVG/hearth.svg"}
+                src={"/hearth.svg"}
                 width={70}
                 className="absolute left-[28%] -top-[20px] 390:left-[25%] 420:left-[23%] sm:hidden"
                 height={60}
@@ -135,7 +135,7 @@ export const Proof = () => {
       <div className="h-5 sm:h-[47px]"/>
       <ClientComments ref={sliderRef} />
       <div className="absolute top-0 z-10 left-0 h-[800px] 2xl:h-[480px] w-[2000px]">
-        <Image src={"/assets/landing/Proof/cloud.webp"} fill alt="cloud background" />
+        <Image src={"/cloud.webp"} fill alt="cloud background" />
       </div>
     </Canvas>
   );

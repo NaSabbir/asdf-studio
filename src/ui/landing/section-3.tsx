@@ -27,7 +27,7 @@ export const SectionThree = () => {
           width={686}
           height={559}
           alt="instagram icon"
-          src="/assets/landing/Marketing/instagram@2x.png"
+          src="/instagram@2x.png"
         />
         <div className="absolute top-[530px] sm:top-[192px] flex flex-col w-[320px] sm:w-[400px] sm:left-[152px] z-30 xl:left-[442px]">
           <Typography
@@ -63,28 +63,28 @@ export const SectionThree = () => {
           width={596}
           height={617}
           alt="identify image"
-          src="/assets/landing/Marketing/identity@2x.png"
+          src="/identity@2x.png"
         />
         <Image
           className="absolute top-[131px] -right-[295px] z-0 hidden sm:hidden x:hidden xl:block -right-[300px]"
           width={719}
           height={652}
           alt="identify image"
-          src="/assets/landing/Marketing/identity@2x.png"
+          src="/identity@2x.png"
         />
         <Image
           className="absolute top-[70px] -right-[82px] z-0 sm:hidden max-w-[431px]"
           width={431}
           height={397}
           alt="mobile identify image"
-          src="/assets/landing/Marketing/mobile-identify@2x.png"
+          src="/mobile-identify@2x.png"
         />
         <Image
           className="absolute top-[950px] -left-[128px] z-0 sm:hidden"
           width={686}
           height={559}
           alt="instagram"
-          src="/assets/landing/Marketing/mobile-instagram@2x.png"
+          src="/mobile-instagram@2x.png"
         />
         {/* <Image
           className="absolute top-[534px] left-[330px] z-0 hidden sm:block left-[100px] sm:top-[674px] x:left-[200px] xl:left-[400px] xl:top-[584px]"
@@ -93,13 +93,13 @@ export const SectionThree = () => {
           alt="google image"
           src="/assets/landing/Marketing/google@2x.png"
         /> */}
-        <object type="image/svg+xml" data="/assets/landing/SVG/mareting.svg" className="w-[642px] h-[364px] absolute top-[534px] left-[330px] z-0 hidden sm:block left-[100px] sm:top-[674px] x:left-[200px] xl:left-[400px] xl:top-[584px]"></object>
+        <object type="image/svg+xml" data="/mareting.svg" className="w-[642px] h-[364px] absolute top-[534px] left-[330px] z-0 hidden sm:block left-[100px] sm:top-[674px] x:left-[200px] xl:left-[400px] xl:top-[584px]"></object>
         <Image
           className="absolute top-[1220px] left-0 z-0 sm:hidden"
           width={360}
           height={355}
           alt="google image"
-          src="/assets/landing/Marketing/mobile-google@2x.png"
+          src="/mobile-google@2x.png"
         />
       </div>
       <OurClients />

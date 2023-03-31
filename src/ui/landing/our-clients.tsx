@@ -122,7 +122,7 @@ export const OurClients = () => {
             {clients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
-                src={"/assets/logos/Clients/" + url}
+                src={"/" + url}
                 width={width}
                 height={height}
                 style={{ width: width, height: height }}
@@ -144,7 +144,7 @@ export const OurClients = () => {
             {establishiedClients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
-                src={"/assets/logos/Clients/" + url}
+                src={"/" + url}
                 width={width}
                 height={height}
                 style={{ width: width, height: height }}
