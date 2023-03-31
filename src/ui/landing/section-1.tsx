@@ -63,17 +63,16 @@ export const SectionOne = () => {
             padding,
           ].join(" ")}
         >
+          <Link to={'ourService'} spy={true} smooth={true} offset={-70} duration={1000}>
           <Button
             endIcon={<ChevronRight className="fill-main-blue" />}
             variant="secondary"
             className="w-full sm:w-[225px] h-[45px]"
             typoVariant="title-semi-button"
-            onClick={() => 
-             window.open('https://capture.dropbox.com/LVw3RlbsBT8ig80M', '_blank') 
-            }
           >
             our services
           </Button>
+          </Link>
           <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
           <Button
             typoVariant="title-semi-button"
@@ -168,6 +167,7 @@ export const SectionOne = () => {
 
 
       <div
+      id='ourService'
         className={[
           "max-w-mobile sm:max-w-desktop-s mx-auto w-full relative sm:h-[1550px] xl:sm:h-[1400px] z-10 h-[1940px]",
           padding,

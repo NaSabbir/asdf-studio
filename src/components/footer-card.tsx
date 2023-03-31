@@ -159,7 +159,7 @@ export const FooterCard: FC<Props> = ({
               {"REQUIRED"}
             </Typography> : null
             }
-          <Input type="text" id="name" name="name" required onChange={handleChange} 
+          <Input type="text" id="name" name="name" onChange={handleChange} 
           className= {
             emptyName === false ? 
             "h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox" : 
@@ -245,7 +245,7 @@ export const FooterCard: FC<Props> = ({
         footer={null}
         mask={false}
       >
-        <div className="ml-2 mb-4 flex gap-[17.5px]">
+        <div className="ml-2 flex gap-[17.5px]">
           <Image
             src={"/assets/landing/Footer/" + path}
             width={189}
@@ -253,7 +253,7 @@ export const FooterCard: FC<Props> = ({
             alt="image"
           />
         </div>
-        <div className="ml-2 mb-4 mt-6 flex gap-[5px] flex flex-row justify-between">
+        <div className="ml-2 flex gap-[5px] flex flex-row justify-between">
         <Typography
             variant="heading5"
             classname="text-main-deepBlue text-center pt-6"
@@ -271,11 +271,11 @@ export const FooterCard: FC<Props> = ({
           : null
         }
         </div>
-        <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-2 border-main-lightBlue flex justify-between pr-3 pt-2">
+        <div className="ml-2 mb-2 mt-2 flex gap-[5px] flex flex-col">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 flex items-center">
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-center pl-5"
+              classname="text-main-deepBlue pl-5"
               >
                 {"hello@airlystudio.com"}
             </Typography>
@@ -289,25 +289,25 @@ export const FooterCard: FC<Props> = ({
           </div>
         </div>
         <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
-          <div className='-ml-8 -mr-6 border-[1px] border-main-textBox'></div>
-          <Typography
-              variant="heading5"
-              classname="text-main-deepBlue pt-6"
-            >
-              {"Phone"}
-          </Typography>
-          <Typography
-              variant="title5"
-              classname="text-main-deepBlue pt-2"
-            >
-              Along with direct phone call,
-              <span className="font-bold"> WhatsApp </span>
-              and  
-              <span className="font-bold"> Telegram </span>
-              are also available
-          </Typography>
+          <div className="-ml-8 -mr-6 border-[0.5px] border-main-textBox"></div>
+            <Typography
+                variant="heading5"
+                classname="text-main-deepBlue pt-6"
+              >
+                {"Phone"}
+            </Typography>
+            <Typography
+                variant="title5"
+                classname="text-main-deepBlue font-medium"
+              >
+                Along with direct phone call,
+                <span className="font-bold"> WhatsApp </span>
+                and  
+                <span className="font-bold"> Telegram </span>
+                are also available
+            </Typography>
           
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-2 border-main-lightBlue flex justify-between pr-3 pt-2 mt-2">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
             <Typography
               variant="title5"
               classname="text-main-deepBlue text-center pl-5"
@@ -321,7 +321,7 @@ export const FooterCard: FC<Props> = ({
                 {"+880 18 9154 7896"}
             </Typography>
           </div>
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-2 border-main-lightBlue flex justify-between pr-3 pt-2 mt-2">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
             <Typography
               variant="title5"
               classname="text-main-deepBlue text-center pl-5"
@@ -335,7 +335,7 @@ export const FooterCard: FC<Props> = ({
                 {"+880 16 1699 2233"}
             </Typography>
           </div>
-          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-2 border-main-lightBlue flex justify-between pr-3 pt-2 mt-2">
+          <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 mt-2 flex items-center">
             <Typography
               variant="title5"
               classname="text-main-deepBlue text-center pl-5"
@@ -380,8 +380,8 @@ export const FooterCard: FC<Props> = ({
             {"Thank you!"}
           </Typography>
           <Typography
-            variant="title3"
-            classname="text-main-deepBlue text-center sm:items-center xl:text-center"
+            variant="title6"
+            classname="w-[264px] text-main-deepBlue text-center sm:items-center xl:text-center"
           >
             {"Thank you for sending us your message. We will get back to you as soon as possible."}
           </Typography>

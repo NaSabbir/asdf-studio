@@ -62,7 +62,7 @@ export const Header = () => {
                   </Button>
                 ))}
             </div>
-            <div className="mr-3">
+            <div className="p-3 1xl:pr-3">
               <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
                 <Button variant="primary" className="hover:bg-main-hoverOrange w-[140px] h-[40px] sm:w-[200px] h-[40px]">
                   Portfolio

@@ -40,6 +40,7 @@ export const Portfolio = () => {
               of creating innovative digital products.
             </Typography>
             <div className={"flex w-full justify-center sm: top-[180px]"}>
+            <Link href="https://airlystudio.myportfolio.com/" target="_blank" rel="noopener noreferrer">
             <Button
               typoVariant="title-semi-button"
               endIcon={<ChevronRight className="fill-white"/>}
@@ -47,6 +48,7 @@ export const Portfolio = () => {
             >
               Our Portfolio
             </Button>
+            </Link>
             </div>
         </div>
         <div className="absolute flex flex-wrap w-full justify-center 420:gap-[30px] px-5 sm:px-0 sm:w-[1080px] left-1/2 transform -translate-x-1/2 gap-5 x:px-0 x:w-[1780px] left-1/2 transform -translate-x-1/2 gap-5">
@@ -81,13 +83,15 @@ export const Portfolio = () => {
           })}
         </div>
         <div className="relative -bottom-[1150px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
+        <Link href="https://airlystudio.myportfolio.com/" target="_blank" rel="noopener noreferrer">
         <Button
           typoVariant="title-semi-button"
           endIcon={<ChevronRight className="fill-white"/>}
-          className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2y sm:hidden"
+          className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:hidden"
         >
           OUR PORTFOLIO
         </Button>
+        </Link>
         
       </div>
     </Canvas>

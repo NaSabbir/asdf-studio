@@ -17,10 +17,12 @@ export type TypoVariants =
   | "label3"
   | "title1"
   | "body2"
+  | "body3"
   | "title2"
   | "title3"
   | "title4"
   | "title5"
+  | "title6"
   | "title-semi-button";
 
 type Props = {
@@ -46,6 +48,7 @@ export const Typography: FC<Props> = ({
     title3: "text-[16px] leading-[20px] tracking-[1.5px] font-sans",
     title4: "text-[16px] leading-[20px] font-bold",
     title5: "text-[16px] leading-[20px]",
+    title6: "text-[16px] leading-[20px] tracking-normal font-sans font-[500]",
     heading: "text-[40px] font-medium",
     body: "text-[14px] font-man font-bold tracking-[1px] leading-[24px]",
     heading1:
@@ -58,6 +61,7 @@ export const Typography: FC<Props> = ({
     heading5: "text-[30px] leading-[25px] -tracking-[1.09px] font-sans",
     body1: "text-[20px] leading-[26px] tracking-normal",
     body2: "text-[12px] leading-normal tracking-[0.2px]",
+    body3: "text-[12px] tracking-[0.2px] leading-4",
     label1:
       "text-[13.5px] font-demi font-semibold leading-normal tracking-[0px]",
     label2: "text-[13.5px]  leading-normal tracking-[0.84px]",
