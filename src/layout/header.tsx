@@ -93,7 +93,7 @@ export const Header = () => {
             >
               {NAV__LINK.map((item, index) => (
                   <Button variant="text">
-                    <Link to={item.path} spy={true} smooth={true} offset={-60} duration={500} key={index} className="border-b-4 border-white whitespace-nowrap hover:border-main-deepBlue">
+                    <Link to={item.path} spy={true} smooth={true} offset={-60} duration={500} key={index} onClick={() => setNavbar(!navbar)} className="border-b-4 border-white whitespace-nowrap hover:border-main-deepBlue">
                       {item.display}
                     </Link>
                   </Button>
