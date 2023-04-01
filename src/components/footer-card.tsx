@@ -316,13 +316,13 @@ export const FooterCard: FC<Props> = ({
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3 sm:text-center"
+              classname="text-main-deepBlue text-start pl-3"
               >
                 {"Operations"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap"
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
               >
                 {"+880 189154 7896"}
             </Typography>
@@ -330,13 +330,13 @@ export const FooterCard: FC<Props> = ({
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3 sm:text-center"
+              classname="text-main-deepBlue text-start pl-3"
               >
                 {"Dev Team"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap"
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
               >
                 {"+880 16 1699 2233"}
             </Typography>
@@ -344,13 +344,13 @@ export const FooterCard: FC<Props> = ({
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3 sm:text-center"
+              classname="text-main-deepBlue text-start pl-3"
               >
                 {"Design Team"}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap"
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
               >
                 {"+880 18 9154 7896"}
             </Typography>
