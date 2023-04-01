@@ -352,7 +352,7 @@ export const SectionOne = () => {
           </div>
         </div>
         <Image
-          className="absolute -bottom-5 left-[325px] hidden sm:block absolute top-[1200px] sm:left-[20px] xl:left-[320px] xl:top-[1050px]"
+          className="absolute -bottom-5 left-[325px] hidden sm:block absolute top-[1210px] sm:left-[20px] xl:left-[320px] xl:top-[1060px]"
           src="/journal@3x.png"
           width={548}
           height={368}
