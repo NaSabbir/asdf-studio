@@ -65,7 +65,7 @@ export const Typography: FC<Props> = ({
     label1:
       "text-[13.5px] font-demi font-semibold leading-normal tracking-[0px]",
     label2: "text-[13.5px]  leading-normal tracking-[0.84px]",
-    label3: "text-[14px] font-light tracking-normal leading-[15px]",
+    label3: "text-[14px] font-light tracking-normal leading-[10px]",
   };
 
   return (

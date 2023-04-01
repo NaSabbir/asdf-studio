@@ -72,7 +72,13 @@ export const FooterCard: FC<Props> = ({
 
   return (
     <div className="max-w-full sm:max-w-[285px] w-full flex flex-col items-center sm:items-center xl:items-start">
-      <div className="h-[114px] ml-2 mb-2">
+      <div 
+      // className="h-[114px] ml-[-5px] mb-2"
+      className={[
+        "h-[114px] mb-2",
+        type === "message" ? "sm:ml-[-2px]" : "sm:ml-[-10px]",
+      ].join(" ")}
+      >
         <Image
           src={"/" + path}
           width={width}

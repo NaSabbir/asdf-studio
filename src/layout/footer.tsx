@@ -48,8 +48,6 @@ export const Footer = () => {
               height: 112,
             }}
             title="Schedule a Meeting"
-
-            
             desc="Let’s schedule a 15-minutes free consultation call. We are very eager to hear from you and collaborate"
             buttonText="schedule"
             type="meeting"

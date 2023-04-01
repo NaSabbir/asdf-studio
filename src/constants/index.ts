@@ -15,7 +15,7 @@ export const userComments: Data[] = [
   {
     color: "blue",
     comment:
-      "Thank you very much for your kind support for my application design. I would highly recommend Airly Studio for any design related applications. I am looking forward to work with them again.",
+      "Thank you very much for your kind support for my application design. I would highly recommend Airly Studio for any design. I am looking forward to work with them again.",
     name: "Venkat Rao Y.",
     position: "Operation Manager, IACE",
   },
