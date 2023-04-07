@@ -138,10 +138,10 @@ export const Header = () => {
 
            <div className=
           //  'sm:fixed w-[325px] h-[35px] text-white bg-main-blue rounded-[20px] flex justify-center items-center inline-flex top-[670px] -right-[15%] rotate-90 x:-right-[10%] xl:top-[550px] xl:-right-[7%] 2xl:xl:top-[770px] 5xl:-right-[5%]'>
-            'sm:fixed w-[325px] h-[35px] text-white bg-main-red rounded-[20px] flex justify-center items-center inline-flex rotate-90 bottom-40 -right-20 -mr-[45px]'>
+            'sm:fixed w-[325px] h-[35px] text-white bg-main-blue rounded-[20px] flex justify-center items-center inline-flex rotate-90 bottom-40 -right-20 -mr-[45px]'>
             <li className='flex items-center justify-center'>
               <a className='flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white' href="https://dribbble.com/airlystudio" target="_blank" rel="noopener noreferrer">
-                DRIBBBLE
+                DRIBBBLEEEEE
               </a>
             </li>
             <p className='cursor-default flex items-center mr-[5px] ml-[5px]'>/</p>
