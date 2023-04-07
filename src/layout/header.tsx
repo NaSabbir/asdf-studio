@@ -159,7 +159,7 @@ export const Header = () => {
             <p className='cursor-default flex items-center mr-[5px] ml-[5px]'>/</p>
             <li className='flex items-center justify-center'>
               <a className='flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white' href="https://www.linkedin.com/company/airlystudio" target="_blank" rel="noopener noreferrer">
-                LINKEDINN
+                LINKEDIN
               </a>
             </li>
            </div>
