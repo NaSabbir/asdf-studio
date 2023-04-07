@@ -141,7 +141,7 @@ export const Header = () => {
             'sm:fixed w-[325px] h-[35px] text-white bg-main-blue rounded-[20px] flex justify-center items-center inline-flex rotate-90 bottom-40 -right-20 -mr-[45px]'>
             <li className='flex items-center justify-center'>
               <a className='flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white' href="https://dribbble.com/airlystudio" target="_blank" rel="noopener noreferrer">
-                DRIBBBLEE
+                DRIBBBLE
               </a>
             </li>
             <p className='cursor-default flex items-center mr-[5px] ml-[5px]'>/</p>
