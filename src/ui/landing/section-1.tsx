@@ -1,9 +1,9 @@
-import { Button, Canvas, Typography, Tag } from "components";
-import { padding } from "../../constants";
-import { ArrowRight, ChevronRight } from "icons";
-import Image from "next/image";
-import { HeroAnimation } from '../../components/svgs'
-import { Link } from "react-scroll";
+import { Button, Canvas, Typography, Tag } from 'components';
+import { padding } from '../../constants';
+import { ArrowRight, ChevronRight } from 'icons';
+import Image from 'next/image';
+import { HeroAnimation } from '../../components/svgs';
+import { Link } from 'react-scroll';
 
 const BottomComp = (
   <div className="bg-blue h-[800px] absolute bottom-0 z-0 w-full" />
@@ -16,7 +16,7 @@ export const SectionOne = () => {
       // containerClassName="px-5"
       bottomComp={BottomComp}
     >
-      <div className="relative mx-auto w-fit h-[853px] sm:h-auto" id='home'>
+      <div className="relative mx-auto w-fit h-[853px] sm:h-auto" id="home">
         {/* <Image
           src="/assets/landing/notebook.svg"
           width={1080}
@@ -24,39 +24,62 @@ export const SectionOne = () => {
           height={676}
           alt="notebook image"
         /> */}
-
-          <object type="image/svg+xml" data="/HeroAnimation.svg" className="hidden x:block w-[1080px] h-[676px]"></object>
-          <object type="image/svg+xml" data="/HeroAnimation.svg" className="hidden sm:block w-[768px] h-[478px] x:hidden"></object>
-          {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="w-[auto] h-[auto] sm:hidden"></object> */}
-          {/* 360 */}
-          {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="360:w-[auto] h-[auto] object-contain sm:hidden"></object> */}
-          {/* 390 */}
-          <object type="image/svg+xml" data="/HeroAnimationMobile.svg" className="w-[100%] h-[80%] 360:w-[auto] 360:h-[auto] 375:w-[102%] 375:h-[auto] 390:w-[102%] 390:h-[100%] 420:w-[102%] 420:h-[108%] 430:w-[106%] 430:h-[110%] sm:hidden"></object>
-          
+        <object
+          type="image/svg+xml"
+          data="/HeroAnimation.svg"
+          className="hidden x:block w-[1080px] h-[676px]"
+        ></object>
+        <object
+          type="image/svg+xml"
+          data="/HeroAnimation.svg"
+          className="hidden sm:block w-[768px] h-[478px] x:hidden"
+        ></object>
+        {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="w-[auto] h-[auto] sm:hidden"></object> */}
+        {/* 360 */}
+        {/* <object type="image/svg+xml" data="/assets/landing/SVG/HeroAnimationMobile.svg" className="360:w-[auto] h-[auto] object-contain sm:hidden"></object> */}
+        {/* 390 */}
+        <object
+          type="image/svg+xml"
+          data="/HeroAnimationMobile.svg"
+          className=" w-[320px] h-[auto] sm:hidden"
+        ></object>
+        ``
         <div
           className={[
-            "flex w-full justify-center absolute sm:bottom-[-15px] gap-5 flex-col sm:flex-row xl:bottom-[45px]",
+            'flex w-full justify-center absolute sm:bottom-[-15px] gap-5 flex-col sm:flex-row xl:bottom-[45px]',
             padding,
-          ].join(" ")}
+          ].join(' ')}
         >
-          <Link to={'ourService'} spy={true} smooth={true} offset={-70} duration={1000}>
-          <Button
-            endIcon={<ChevronRight className="fill-main-blue" />}
-            variant="secondary"
-            className="w-full sm:w-[225px] h-[45px]"
-            typoVariant="title-semi-button"
+          <Link
+            to={'ourService'}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
           >
-            our services
-          </Button>
+            <Button
+              endIcon={<ChevronRight className="fill-main-blue" />}
+              variant="secondary"
+              className="w-full sm:w-[225px] h-[45px]"
+              typoVariant="title-semi-button"
+            >
+              our services
+            </Button>
           </Link>
-          <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
-          <Button
-            typoVariant="title-semi-button"
-            endIcon={<ChevronRight className="fill-white"/>}
-            className="w-full hover:bg-main-hoverOrange sm:w-[225px] h-[45px] shadow-buttonShadow4"
+          <Link
+            to={'contact_us'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
           >
-            start a project
-          </Button>
+            <Button
+              typoVariant="title-semi-button"
+              endIcon={<ChevronRight className="fill-white" />}
+              className="w-full hover:bg-main-hoverOrange sm:w-[225px] h-[45px] shadow-buttonShadow4"
+            >
+              start a project
+            </Button>
           </Link>
         </div>
       </div>
@@ -93,16 +116,22 @@ export const SectionOne = () => {
             height={191}
             alt="emojis"
           />
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
+          >
             <Button
               variant="square"
               typoVariant="label"
               className="hidden sm:block absolute sm:top-[185px] sm:right-[55px] x:absolute x:top-[185px] x:right-[305px] xl:absolute xl:top-[185px] xl:right-[305px] w-[170px] h-[23.9px]"
-              endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
             >
-                Landing Page design
-          </Button>
-         </Link>
+              Landing Page design
+            </Button>
+          </Link>
           <Image
             className="absolute -right-[440px] -top-[70px] hidden sm:block xl:left-[980px]"
             alt="box"
@@ -111,43 +140,54 @@ export const SectionOne = () => {
             style={{ width: 665, height: 408 }}
             src="/box@2x.png"
           />
-         <Image
+          <Image
             className="absolute -top-[40px] sm:hidden max-w-[500px] w-[500px] left-[70px]"
             alt="box"
             width={270}
             height={285}
             src="/box@2x.png"
           />
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-           <Button
-            variant="square"
-            typoVariant="label"
-            className="top-[105px] right-[85px] absolute w-[163px] h-[23.9px] sm:hidden"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
           >
+            <Button
+              variant="square"
+              typoVariant="label"
+              className="top-[105px] right-[85px] absolute w-[163px] h-[23.9px] sm:hidden"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+            >
               EXPLORE WEB DESIGN
-          </Button>
+            </Button>
           </Link>
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-          <Button
-            variant="square"
-            typoVariant="label"
-            className="flex items-center top-[25px] right-[107px] absolute hidden sm:block sm:top-[70px] sm:right-[500px] x:top-[70px] x:right-[700px] xl:right-[675px] xl:top-[120px] w-[130px] h-[23.9px]"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
           >
+            <Button
+              variant="square"
+              typoVariant="label"
+              className="flex items-center top-[25px] right-[107px] absolute hidden sm:block sm:top-[70px] sm:right-[500px] x:top-[70px] x:right-[700px] xl:right-[675px] xl:top-[120px] w-[130px] h-[23.9px]"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+            >
               ILLSUTRATIONS
-          </Button>
+            </Button>
           </Link>
         </div>
       </div>
 
-
       <div
-      id='ourService'
+        id="ourService"
         className={[
-          "max-w-mobile sm:max-w-desktop-s mx-auto w-full relative sm:h-[1550px] xl:sm:h-[1400px] z-10 h-[1940px]",
+          'max-w-mobile sm:max-w-desktop-s mx-auto w-full relative sm:h-[1550px] xl:sm:h-[1400px] z-10 h-[1940px]',
           padding,
-        ].join(" ")}
+        ].join(' ')}
       >
         <div className="absolute top-[75px] left-5 sm:top-[0px] sm:-left-[7px] flex gap-[22px]">
           <Image
@@ -168,10 +208,10 @@ export const SectionOne = () => {
               variant="heading"
               classname="-tracking-[0.95px] leading-10 text-main-deepBlue"
             >
-              We are a{" "}
+              We are a{' '}
               <span className="underline underline-offset-4">
                 complete Solution
-              </span>{" "}
+              </span>{' '}
               agency for your digital presence
             </Typography>
           </div>
@@ -184,13 +224,19 @@ export const SectionOne = () => {
             height={97}
             alt="web design"
           />
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-          <Button
-            variant="square"
-            typoVariant="label"
-            className="w-[167px] h-[22.4px] absolute -bottom-[10%] left-[9%] hidden sm:block"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
           >
+            <Button
+              variant="square"
+              typoVariant="label"
+              className="w-[167px] h-[22.4px] absolute -bottom-[10%] left-[9%] hidden sm:block"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+            >
               EXPLORE WEB DESIGN
             </Button>
           </Link>
@@ -201,16 +247,21 @@ export const SectionOne = () => {
             height={67}
             alt="web design"
           />
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-          <Button
-            variant="square"
-            typoVariant="label"
-            className="w-[172px] h-[22.4px] absolute -bottom-[15px] left-[25%] hidden sm:hidden"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
           >
-            
-            Explore Collection
-          </Button>
+            <Button
+              variant="square"
+              typoVariant="label"
+              className="w-[172px] h-[22.4px] absolute -bottom-[15px] left-[25%] hidden sm:hidden"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+            >
+              Explore Collection
+            </Button>
           </Link>
         </div>
         <div className="absolute top-[1490px] -right-[200px] sm:right-[-180px] sm:top-[350px] flex flex-col xl:right-[10px] xl:top-[190px]">
@@ -221,19 +272,25 @@ export const SectionOne = () => {
             height={408}
             alt="music app"
           />
-          <Link to={"portfolio"} spy={true} smooth={true} offset={-60} duration={500}>
-          <Button
-            variant="square"
-            typoVariant="label"
-            className="w-[117px] h-[22.4px] absolute bottom-[31%] -left-[19%] hidden sm:block"
-            endIcon={<ArrowRight className="fill-main-red text-[10.5px]"/>}
+          <Link
+            to={'portfolio'}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
           >
+            <Button
+              variant="square"
+              typoVariant="label"
+              className="w-[117px] h-[22.4px] absolute bottom-[31%] -left-[19%] hidden sm:block"
+              endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
+            >
               Sleeveless
-          </Button>
+            </Button>
           </Link>
         </div>
         <Image
-          className="absolute top-[151px] right-[320px] hidden sm:block top-[160px] sm:right-[60px] xl:right-[320px]"  
+          className="absolute top-[151px] right-[320px] hidden sm:block top-[160px] sm:right-[60px] xl:right-[320px]"
           src="/tacos@2x.png"
           width={200}
           height={274}
@@ -274,8 +331,16 @@ export const SectionOne = () => {
           height={377}
           alt="devices image"
         /> */}
-        <object type="image/svg+xml" data="/diverse-design.svg" className="hidden xl:block w-[322px] h-[429px] absolute left-[480px] xl:absolute top-[250px]"></object>
-        <object type="image/svg+xml" data="/diverse-design.svg" className="hidden sm:block absolute w-[283px] h-[377px] z-20 left-[280px] sm:top-[300px] x:left-[380px] xl:hidden"></object>
+        <object
+          type="image/svg+xml"
+          data="/diverse-design.svg"
+          className="hidden xl:block w-[322px] h-[429px] absolute left-[480px] xl:absolute top-[250px]"
+        ></object>
+        <object
+          type="image/svg+xml"
+          data="/diverse-design.svg"
+          className="hidden sm:block absolute w-[283px] h-[377px] z-20 left-[280px] sm:top-[300px] x:left-[380px] xl:hidden"
+        ></object>
         <Image
           className="absolute top-[300px] left-[78px] z-20 sm:hidden"
           src="/devices@2x.png"
@@ -324,14 +389,18 @@ export const SectionOne = () => {
 
         {/* Design secion*/}
 
-        <div id='design' className="absolute left-[5px] top-[770px] sm:absolute sm:left-[100px] sm:top-[850px] sm:top-0 sm:bottom-[373px] flex flex-col max-w-[465px] w-full px-5 xl:left-[400px] xl:top-[700px]">
-        {/* <div className="absolute left-[5px] top-[780px] sm:absolute flex flex-col"> */}
+        <div
+          id="design"
+          className="absolute left-[5px] top-[770px] sm:absolute sm:left-[100px] sm:top-[850px] sm:top-0 sm:bottom-[373px] flex flex-col max-w-[465px] w-full px-5 xl:left-[400px] xl:top-[700px]"
+        >
+          {/* <div className="absolute left-[5px] top-[780px] sm:absolute flex flex-col"> */}
           <Typography variant="heading1" classname="text-main-deepBlue">
             Design
           </Typography>
           <div className="flex flex-col gap-[21px]">
             <Typography variant="body1" classname="text-main-deepBlue">
-              We are a design-first agency obsessed with creating best user experience possible
+              We are a design-first agency obsessed with creating best user
+              experience possible
             </Typography>
             <div className="flex flex-wrap gap-[7.5px]">
               <Tag text="UI & UX Design" />
@@ -340,14 +409,20 @@ export const SectionOne = () => {
               <Tag text="3D Modeling & Rendering" />
               <Tag text="Architectural Design" />
             </div>
-            <Link to={'contact_us'} spy={true} smooth={true} offset={-60} duration={1000}>
-            <Button
-              typoVariant="title-semi-button"
-              endIcon={<ChevronRight className="fill-white" />}
-              className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
+            <Link
+              to={'contact_us'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={1000}
             >
-              Start a Design Project
-            </Button>
+              <Button
+                typoVariant="title-semi-button"
+                endIcon={<ChevronRight className="fill-white" />}
+                className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
+              >
+                Start a Design Project
+              </Button>
             </Link>
           </div>
         </div>
