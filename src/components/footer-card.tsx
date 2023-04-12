@@ -93,6 +93,7 @@ export const FooterCard: FC<Props> = ({
           height={height}
           style={{ width: width, height: height }}
           alt="image"
+          draggable={false}
         />
       </div>
 
@@ -393,6 +394,7 @@ export const FooterCard: FC<Props> = ({
             className="justify-center"
             height={105}
             alt="hearth emoji"
+            draggable={false}
           />
         </div>
         <div className="ml-2 mb-6 flex gap-[17.5px] flex-wrap sm:flex-column justify-center">

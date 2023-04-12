@@ -1,17 +1,17 @@
-import { Canvas, FooterCard, Typography } from "components";
-import { padding } from "../constants";
-import Image from "next/image";
-import { Link } from "react-scroll";
+import { Canvas, FooterCard, Typography } from 'components';
+import { padding } from '../constants';
+import Image from 'next/image';
+import { Link } from 'react-scroll';
 
 export const Footer = () => {
   return (
     <Canvas classname="bg-lightBlue">
       <div
-        id='contact_us'
+        id="contact_us"
         className={[
-          "relative max-w-[1180px] 2xl:max-w-[1260px] w-full mx-auto z-20 pt-[60px]",
+          'relative max-w-[1180px] 2xl:max-w-[1260px] w-full mx-auto z-20 pt-[60px]',
           padding,
-        ].join(" ")}
+        ].join(' ')}
       >
         <div className="flex flex-col max-w-[585px] w-full gap-[13px] sm:gap-[6.3px] z-30 items-center sm:items-start sm:ml-[30px]">
           <div className="relative w-fit">
@@ -22,12 +22,13 @@ export const Footer = () => {
               Let’s Connect
             </Typography>
             <Image
-              src={"/thunder@2x.png"}
+              src={'/thunder@2x.png'}
               width={60}
               className="absolute -right-[55px] -top-[25px]"
               height={78}
               style={{ width: 60, height: 78 }}
               alt="hearth emoji"
+              draggable={false}
             />
           </div>
 
@@ -43,7 +44,7 @@ export const Footer = () => {
         <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-around">
           <FooterCard
             image={{
-              path: "calendar@2x.png",
+              path: 'calendar@2x.png',
               width: 188,
               height: 112,
             }}
@@ -54,7 +55,7 @@ export const Footer = () => {
           />
           <FooterCard
             image={{
-              path: "message@2x.png",
+              path: 'message@2x.png',
               width: 112,
               height: 112,
             }}
@@ -65,7 +66,7 @@ export const Footer = () => {
           />
           <FooterCard
             image={{
-              path: "email&Phone@2x.png",
+              path: 'email&Phone@2x.png',
               width: 188,
               height: 112,
             }}
@@ -78,7 +79,13 @@ export const Footer = () => {
 
         <div className="flex flex-col mt-[33px] sm:mt-[52px]">
           <div className="flex sm:gap-[22px] gap-5 mx-auto flex-col sm:flex-row items-center sm:items-start">
-            <Link to={"design"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'design'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -86,7 +93,13 @@ export const Footer = () => {
                 Design
               </Typography>
             </Link>
-            <Link to={"development"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'development'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -94,7 +107,13 @@ export const Footer = () => {
                 Development
               </Typography>
             </Link>
-            <Link to={"marketing"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'marketing'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -102,7 +121,13 @@ export const Footer = () => {
                 Marketing
               </Typography>
             </Link>
-            <Link to={"clients"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'clients'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -110,7 +135,13 @@ export const Footer = () => {
                 Clients
               </Typography>
             </Link>
-            <Link to={"process"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'process'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -118,7 +149,13 @@ export const Footer = () => {
                 Process
               </Typography>
             </Link>
-            <Link to={"testimonials"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              to={'testimonials'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -126,7 +163,14 @@ export const Footer = () => {
                 Testimonials
               </Typography>
             </Link>
-            <Link href="#contact_us" to={"contact_us"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Link
+              href="#contact_us"
+              to={'contact_us'}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
               <Typography
                 classname="uppercase text-main-deepBlue font-medium cursor-pointer"
                 variant="label2"
@@ -148,20 +192,22 @@ export const Footer = () => {
           </div>
         </div>
         <Image
-          src={"/footer@2x.png"}
+          src={'/footer@2x.png'}
           width={1080}
           height={351}
           style={{ width: 1080, height: 351 }}
           alt="footer"
           className="mx-auto hidden sm:block"
+          draggable={false}
         />
         <Image
-          src={"/footer-mobile@2x.png"}
+          src={'/footer-mobile@2x.png'}
           width={360}
           height={335}
           style={{ width: 360, height: 335 }}
           alt="footer"
           className="mx-auto sm:hidden"
+          draggable={false}
         />
       </div>
     </Canvas>

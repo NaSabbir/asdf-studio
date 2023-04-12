@@ -92,6 +92,7 @@ export const SectionOne = () => {
             width={375}
             height={209}
             alt="custom cards"
+            draggable={false}
           />
           <Image
             className="sm:hidden"
@@ -99,6 +100,7 @@ export const SectionOne = () => {
             width={262}
             height={146}
             alt="custom cards"
+            draggable={false}
           />
         </div>
         <div className="absolute sm:left-[-180px] sm:top-0 top-[130px] left-5 w-full z-10">
@@ -108,6 +110,7 @@ export const SectionOne = () => {
             width={235}
             height={292}
             alt="emojis"
+            draggable={false}
           />
           <Image
             className="sm:hidden absolute top-[10px]"
@@ -115,6 +118,7 @@ export const SectionOne = () => {
             width={153}
             height={191}
             alt="emojis"
+            draggable={false}
           />
           <Link
             to={'portfolio'}
@@ -139,6 +143,7 @@ export const SectionOne = () => {
             height={408}
             style={{ width: 665, height: 408 }}
             src="/box@2x.png"
+            draggable={false}
           />
           <Image
             className="absolute -top-[40px] sm:hidden max-w-[500px] w-[500px] left-[70px]"
@@ -146,6 +151,7 @@ export const SectionOne = () => {
             width={270}
             height={285}
             src="/box@2x.png"
+            draggable={false}
           />
           <Link
             to={'portfolio'}
@@ -196,6 +202,7 @@ export const SectionOne = () => {
             width={242}
             height={244}
             alt="services"
+            draggable={false}
           />
           <div className="flex flex-col w-[326px] gap-[13px] sm:absolute right-[-360px] sm:top-[50px] xl:top-[1px]">
             <Typography
@@ -223,6 +230,7 @@ export const SectionOne = () => {
             width={409}
             height={97}
             alt="web design"
+            draggable={false}
           />
           <Link
             to={'portfolio'}
@@ -271,6 +279,7 @@ export const SectionOne = () => {
             width={259}
             height={408}
             alt="music app"
+            draggable={false}
           />
           <Link
             to={'portfolio'}
@@ -295,6 +304,7 @@ export const SectionOne = () => {
           width={200}
           height={274}
           alt="taco image"
+          draggable={false}
         />
         <Image
           className="absolute sm:hidden top-[250px] -right-[70px]"
@@ -302,6 +312,7 @@ export const SectionOne = () => {
           width={200}
           height={274}
           alt="taco image"
+          draggable={false}
         />
         <Image
           className="absolute top-[366px] left-[167px] hidden sm:block absolute left-[20px] xl:left-[160px]"
@@ -309,6 +320,7 @@ export const SectionOne = () => {
           width={285}
           height={140}
           alt="branding image"
+          draggable={false}
         />
         <Image
           className="absolute top-[630px] right-[28px] sm:hidden"
@@ -316,6 +328,7 @@ export const SectionOne = () => {
           width={199}
           height={97}
           alt="branding image"
+          draggable={false}
         />
         {/* <Image
           className="absolute hidden xl:block absolute left-[480px] xl:absolute top-[250px]"
@@ -347,6 +360,7 @@ export const SectionOne = () => {
           width={254}
           height={339}
           alt="devices image"
+          draggable={false}
         />
         <div className="absolute top-[570px] sm:top-[540px] -left-[105px] sm:left-[20px] sm:top-[560px] flex flex-col xl:left-[110px]">
           <Image
@@ -355,6 +369,7 @@ export const SectionOne = () => {
             width={303}
             height={236}
             alt="web design"
+            draggable={false}
           />
           <Image
             className="sm:hidden"
@@ -362,6 +377,7 @@ export const SectionOne = () => {
             width={242}
             height={188}
             alt="web design"
+            draggable={false}
           />
           <Button
             variant="square"
@@ -378,6 +394,7 @@ export const SectionOne = () => {
           width={336}
           height={93}
           alt="ui design image"
+          draggable={false}
         />
         <Image
           className="absolute top-[420px] left-[23px] sm:hidden"
@@ -385,6 +402,7 @@ export const SectionOne = () => {
           width={147}
           height={128}
           alt="ui design image"
+          draggable={false}
         />
 
         {/* Design secion*/}
@@ -432,6 +450,7 @@ export const SectionOne = () => {
           width={548}
           height={368}
           alt="journal image"
+          draggable={false}
         />
         <Image
           className="absolute top-[1200px] -left-[65px] sm:hidden max-w-[493px] w-[493px]"
@@ -439,6 +458,7 @@ export const SectionOne = () => {
           width={493}
           height={332}
           alt="journal image"
+          draggable={false}
         />
         <Image
           className="absolute hidden sm:block absolute bottom-[300px] -left-[390px] xl:left-[-130px] xl:top-[920px]"
@@ -446,6 +466,7 @@ export const SectionOne = () => {
           width={463}
           height={363}
           alt="journal image"
+          draggable={false}
         />
         <Image
           className="absolute bottom-[400px] right-[36px] hidden sm:block left-[620px] sm:top-[810px] xl:left-[960px] xl:top-[760px]"
@@ -453,6 +474,7 @@ export const SectionOne = () => {
           width={290}
           height={226}
           alt="journal image"
+          draggable={false}
         />
         <Image
           className="absolute top-[1760px] left-[46px] z-20 sm:hidden"
@@ -460,6 +482,7 @@ export const SectionOne = () => {
           width={205}
           height={159}
           alt="journal image"
+          draggable={false}
         />
         <Image
           className="absolute -bottom-[110px] -right-[185px] hidden sm:block absolute left-[540px] bottom-[1px] xl:left-[800px] top-[1050px]"
@@ -467,6 +490,7 @@ export const SectionOne = () => {
           width={663}
           height={462}
           alt="dashboard image"
+          draggable={false}
         />
         <Image
           className="absolute top-[1466px] -left-[130px] sm:hidden max-w-[464px] w-[464px]"
@@ -474,6 +498,7 @@ export const SectionOne = () => {
           width={464}
           height={323}
           alt="dashboard image"
+          draggable={false}
         />
       </div>
     </Canvas>

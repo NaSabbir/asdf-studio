@@ -1,10 +1,10 @@
-import { Canvas, IconButton, Typography } from "components";
-import { ChevronRight } from "icons";
-import Image from "next/image";
-import { useRef, useState } from "react";
-import { ClientComments } from "./lets-connect";
-import Slider from "react-slick";
-import { padding } from "../../constants";
+import { Canvas, IconButton, Typography } from 'components';
+import { ChevronRight } from 'icons';
+import Image from 'next/image';
+import { useRef, useState } from 'react';
+import { ClientComments } from './lets-connect';
+import Slider from 'react-slick';
+import { padding } from '../../constants';
 
 export const Proof = () => {
   const sliderRef = useRef<Slider>(null);
@@ -20,11 +20,11 @@ export const Proof = () => {
   return (
     <Canvas classname="bg-main-deepBlue" containerClassName="relative">
       <div
-        id='Process'
+        id="Process"
         className={[
-          "relative h-[850px] max-w-[1180px] sm:h-[950px] 2xl:max-w-[1260px] w-full mx-auto z-20",
+          'relative h-[850px] max-w-[1180px] sm:h-[950px] 2xl:max-w-[1260px] w-full mx-auto z-20',
           padding,
-        ].join(" ")}
+        ].join(' ')}
       >
         <div className="h-[35px] sm:h-[65px]" />
         <div className="flex flex-col w-full max-w-full sm:max-w-[597px] gap-[16px] sm:gap-[6.3px] z-30 sm:ml-[30px]">
@@ -38,10 +38,10 @@ export const Proof = () => {
             variant="heading3"
             classname="-tracking-[0.95px] leading-10 text-main-deepBlue sm:w-[90%]"
           >
-            This is how we go from{" "}
+            This is how we go from{' '}
             <span className="underline underline-offset-4">
               start to finish
-            </span>{" "}
+            </span>{' '}
             everytime, with every project, big or small
           </Typography>
         </div>
@@ -52,7 +52,11 @@ export const Proof = () => {
           width={1063}
           height={808}
         /> */}
-        <object type="image/svg+xml" data="/process.svg" className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden sm:block top-[175px]"></object>
+        <object
+          type="image/svg+xml"
+          data="/process.svg"
+          className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden sm:block top-[175px]"
+        ></object>
         <Image
           alt="mountain mobile"
           className="left-1/2 transform absolute -translate-x-1/2 top-[270px] max-w-[768px] sm:hidden z-20"
@@ -64,26 +68,28 @@ export const Proof = () => {
       <div
         className={[
           // "max-w-[1180px] w-full mx-auto 2xl:max-w-[1260px] sm:ml-[30px] max-w-[680px]",
-          "relative max-w-[1180px] 2xl:max-w-[1260px] w-full mx-auto z-20",
+          'relative max-w-[1180px] 2xl:max-w-[1260px] w-full mx-auto z-20',
           padding,
-        ].join(" ")}
+        ].join(' ')}
       >
         <div className="w-full sm:w-[600px] sm:ml-[30px]">
-          <Typography
-            variant="label3"
-            classname="text-main-cyan"
-          >
-            Please note that the following process is our usual approach for medium to large-scale projects
-            that require both design and development. However, if we are working on simpler projects
-            such as landing page or print design, some steps may be skipped. Additionally, please be
-            aware that the process may vary for projects involving SEO, digital marketing, or animation.
+          <Typography variant="label3" classname="text-main-cyan">
+            Please note that the following process is our usual approach for
+            medium to large-scale projects that require both design and
+            development. However, if we are working on simpler projects such as
+            landing page or print design, some steps may be skipped.
+            Additionally, please be aware that the process may vary for projects
+            involving SEO, digital marketing, or animation.
           </Typography>
         </div>
-        <div className="h-[20px]"/>
-        <div className="h-[1px] bg-main-cyan"/>
-        <div className="h-[60px] sm:h-[30px]" id='testmonials'/>
+        <div className="h-[20px]" />
+        <div className="h-[1px] bg-main-cyan" />
+        <div className="h-[60px] sm:h-[30px]" id="testmonials" />
         <div className="flex flex-col relative gap-[5px] sm:gap-[11px]">
-          <Typography variant="heading3" classname="text-white opacity-35 sm:ml-[30px]">
+          <Typography
+            variant="heading3"
+            classname="text-white opacity-35 sm:ml-[30px]"
+          >
             The Proof
           </Typography>
           <div className="flex justify-between items-center w-full">
@@ -97,18 +103,20 @@ export const Proof = () => {
                 our beloved clients
               </Typography>
               <Image
-                src={"/hearth.svg"}
+                src={'/hearth.svg'}
                 width={105}
                 className="absolute left-[22%] -top-[30px] hidden sm:block"
                 height={105}
                 alt="hearth emoji"
+                draggable={false}
               />
               <Image
-                src={"/hearth.svg"}
+                src={'/hearth.svg'}
                 width={70}
                 className="absolute left-[28%] -top-[20px] 390:left-[25%] 420:left-[23%] sm:hidden"
                 height={60}
                 alt="hearth emoji mobile"
+                draggable={false}
               />
             </div>
             <div className="flex gap-[15px] absolute sm:relative top-[415px] sm:top-0 left-1/2 transform -translate-x-1/2 sm:left-[0px] x:left-[0px] xl:left-[0px]">
@@ -116,7 +124,7 @@ export const Proof = () => {
                 onClick={handleLeftArrowClick}
                 type="circle"
                 icon={
-                  <ChevronRight className="font-[15px] fill-main-deepBlue rotate-180 -mt-1"/>
+                  <ChevronRight className="font-[15px] fill-main-deepBlue rotate-180 -mt-1" />
                 }
                 classname="w-[45px] h-[45px] bg-white pt-1"
               />
@@ -124,7 +132,7 @@ export const Proof = () => {
                 type="circle"
                 onClick={handleRightArrowClick}
                 icon={
-                  <ChevronRight className="font-[15px] fill-main-deepBlue -mt-1"/>
+                  <ChevronRight className="font-[15px] fill-main-deepBlue -mt-1" />
                 }
                 classname="w-[45px] h-[45px] bg-white pt-1"
               />
@@ -132,10 +140,10 @@ export const Proof = () => {
           </div>
         </div>
       </div>
-      <div className="h-5 sm:h-[47px]"/>
+      <div className="h-5 sm:h-[47px]" />
       <ClientComments ref={sliderRef} />
       <div className="absolute top-0 z-10 left-0 h-[800px] 2xl:h-[480px] w-[2000px]">
-        <Image src={"/cloud.webp"} fill alt="cloud background" />
+        <Image src={'/cloud.webp'} fill alt="cloud background" />
       </div>
     </Canvas>
   );

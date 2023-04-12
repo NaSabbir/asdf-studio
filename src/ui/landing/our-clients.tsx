@@ -1,37 +1,37 @@
-import { Typography } from "components";
-import { padding } from "../../constants";
-import Image from "next/image";
+import { Typography } from 'components';
+import { padding } from '../../constants';
+import Image from 'next/image';
 
 export const OurClients = () => {
   const clients = [
     {
-      url: "move@2x.png",
+      url: 'move@2x.png',
       width: 131,
       height: 38,
     },
     {
-      url: "check@2x.png",
+      url: 'check@2x.png',
       width: 78,
       height: 38,
     },
     {
-      url: "jatievip@2x.png",
+      url: 'jatievip@2x.png',
       width: 92,
       height: 38,
     },
     {
-      url: "kinumi@2x.png",
+      url: 'kinumi@2x.png',
       width: 165,
       height: 29,
     },
     {
-      url: "patient@2x.png",
+      url: 'patient@2x.png',
       width: 116,
       height: 34,
     },
 
     {
-      url: "cannabox@2x.png",
+      url: 'cannabox@2x.png',
       width: 141,
       height: 61,
     },
@@ -39,58 +39,58 @@ export const OurClients = () => {
 
   const establishiedClients = [
     {
-      url: "toyota@2x.png",
+      url: 'toyota@2x.png',
       width: 189,
       height: 38,
     },
     {
-      url: "mars@2x.png",
+      url: 'mars@2x.png',
       width: 94,
       height: 38,
     },
     {
-      url: "webflow@2x.png",
+      url: 'webflow@2x.png',
       width: 141,
       height: 38,
     },
     {
-      url: "honda@2x.png",
+      url: 'honda@2x.png',
       width: 177,
       height: 38,
     },
     {
-      url: "citi@2x.png",
+      url: 'citi@2x.png',
       width: 74,
       height: 38,
     },
 
     {
-      url: "vaillant@2x.png",
+      url: 'vaillant@2x.png',
       width: 96,
       height: 38,
     },
     {
-      url: "liquitex@2x.png",
+      url: 'liquitex@2x.png',
       width: 110,
       height: 38,
     },
     {
-      url: "ione@2x.png",
+      url: 'ione@2x.png',
       width: 105,
       height: 32,
     },
     {
-      url: "navigate@2x.png",
+      url: 'navigate@2x.png',
       width: 184,
       height: 32,
     },
     {
-      url: "tuon@2x.png",
+      url: 'tuon@2x.png',
       width: 128,
       height: 32,
     },
     {
-      url: "vint@2x.png",
+      url: 'vint@2x.png',
       width: 125,
       height: 30,
     },
@@ -98,11 +98,11 @@ export const OurClients = () => {
 
   return (
     <div
-      id='clients'
+      id="clients"
       className={[
-        "max-w-mobile sm:max-w-desktop-s mx-auto w-full relative z-10 xl:-mt-[120px]",
+        'max-w-mobile sm:max-w-desktop-s mx-auto w-full relative z-10 xl:-mt-[120px]',
         padding,
-      ].join(" ")}
+      ].join(' ')}
     >
       <div className="w-fit mx-auto">
         <Typography variant="heading1" classname="text-main-deepBlue">
@@ -122,12 +122,13 @@ export const OurClients = () => {
             {clients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
-                src={"/" + url}
+                src={'/' + url}
                 width={width}
                 height={height}
                 style={{ width: width, height: height }}
                 alt="logos"
                 className="object-contain"
+                draggable={false}
               />
             ))}
           </div>
@@ -144,12 +145,13 @@ export const OurClients = () => {
             {establishiedClients.map(({ url, width, height }, index) => (
               <Image
                 key={index}
-                src={"/" + url}
+                src={'/' + url}
                 width={width}
                 height={height}
                 style={{ width: width, height: height }}
                 alt="logos"
                 className="object-contain"
+                draggable={false}
               />
             ))}
           </div>
