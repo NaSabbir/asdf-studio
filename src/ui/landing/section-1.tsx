@@ -41,7 +41,7 @@ export const SectionOne = () => {
         <object
           type="image/svg+xml"
           data="/HeroAnimationMobile.svg"
-          className=" w-[320px] h-[auto] sm:hidden"
+          className="w-[140%] h-[auto] ml-[-50px] sm:hidden"
         ></object>
         ``
         <div

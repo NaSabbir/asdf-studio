@@ -11,7 +11,7 @@ module.exports = {
       '1xl': '1230px', //laptop
       '2xl': '1440px', //desktop
       '5xl': '1920px', // ultra wide
-      360: '360px',
+      360: '359px',
       375: '375px',
       390: '390px',
       420: '415px',
