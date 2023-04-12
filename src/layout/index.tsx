@@ -14,7 +14,7 @@ const MainLayout: FC<Props> = ({ children }) => {
         <title>Airly Studio</title>
         <meta name="description" content="The complete solution agency" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content={'/website_thumbnail@1x.png'} />
+        <meta property="og:image" content="/website_thumbnail@1x.png" />
         <link rel="icon" href="/apple-icon.png" />
       </Head>
       <Header />
