@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { ChevronRight } from "icons";
-import Image from "next/image";
-import { FC } from "react";
-import { Button } from "./button";
-import { Typography } from "./Typography";
+import { ChevronRight } from 'icons';
+import Image from 'next/image';
+import { FC } from 'react';
+import { Button } from './button';
+import { Typography } from './Typography';
 import { Input, Modal } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCircleXmark, faCopy } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheck,
+  faCircleXmark,
+  faCopy,
+} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   image: {
@@ -24,7 +28,7 @@ export const FooterCard: FC<Props> = ({
   image,
   title,
   desc,
-  buttonText = "",
+  buttonText = '',
   type,
 }) => {
   const { path, width, height } = image;
@@ -42,24 +46,28 @@ export const FooterCard: FC<Props> = ({
   const [show, setShow] = useState(false);
 
   const onclickHandel = () => {
-    name === '' ? setemptyName(true) : setemptyName(false)
-    email === '' ? setemptyEmail(true) :setemptyEmail(false)
-    message === '' ? setemptyMessage(true) : setemptyMessage(false)
-    name === '' || email === '' || message === '' ? null : 
-    (setMessageModalOpen(false), 
-    setOpenThankyouCard(true)
-    )
-  }
+    name === '' ? setemptyName(true) : setemptyName(false);
+    email === '' ? setemptyEmail(true) : setemptyEmail(false);
+    message === '' ? setemptyMessage(true) : setemptyMessage(false);
+    name === '' || email === '' || message === ''
+      ? null
+      : (setMessageModalOpen(false), setOpenThankyouCard(true));
+  };
   const handleCancel = () => {
     setOpenThankyouCard(false),
-    setMessageModalOpen(false),
-    setContactModalOpen(false)
+      setMessageModalOpen(false),
+      setContactModalOpen(false);
   };
   const handleChange = (event: any) => {
-    event.target.id === "name" ? setName(event.target.value) : 
-    event.target.id === "email" ? setEmail(event.target.value) : 
-    event.target.id === "company" ? setCompany(event.target.value) :
-    event.target.id === "message" ? setMessage(event.target.value) : null
+    event.target.id === 'name'
+      ? setName(event.target.value)
+      : event.target.id === 'email'
+      ? setEmail(event.target.value)
+      : event.target.id === 'company'
+      ? setCompany(event.target.value)
+      : event.target.id === 'message'
+      ? setMessage(event.target.value)
+      : null;
   };
   const copyToClipBoard = async (copyMe: string) => {
     try {
@@ -72,15 +80,15 @@ export const FooterCard: FC<Props> = ({
 
   return (
     <div className="max-w-full sm:max-w-[285px] w-full flex flex-col items-center sm:items-center xl:items-start">
-      <div 
-      // className="h-[114px] ml-[-5px] mb-2"
-      className={[
-        "h-[114px] mb-2",
-        type === "message" ? "sm:ml-[-2px]" : "sm:ml-[-10px]",
-      ].join(" ")}
+      <div
+        // className="h-[114px] ml-[-5px] mb-2"
+        className={[
+          'h-[114px] mb-2',
+          type === 'message' ? 'sm:ml-[-2px]' : 'sm:ml-[-10px]',
+        ].join(' ')}
       >
         <Image
-          src={"/" + path}
+          src={'/' + path}
           width={width}
           height={height}
           style={{ width: width, height: height }}
@@ -103,12 +111,16 @@ export const FooterCard: FC<Props> = ({
         </Typography>
       </div>
       <Button
-        endIcon={<ChevronRight className="fill-main-blue"/>}
+        endIcon={<ChevronRight className="fill-main-blue" />}
         variant="secondary"
         className="w-[225px] h-[45px] shadow-buttonShadow2"
         typoVariant="title-semi"
-        onClick={() => 
-          type === "message" ? setMessageModalOpen(true) : type === "contact" ? setContactModalOpen(true) : window.open('https://calendly.com/airlystudio/meeting', '_blank') 
+        onClick={() =>
+          type === 'message'
+            ? setMessageModalOpen(true)
+            : type === 'contact'
+            ? setContactModalOpen(true)
+            : window.open('https://calendly.com/airlystudio/meeting', '_blank')
         }
       >
         {buttonText}
@@ -121,12 +133,14 @@ export const FooterCard: FC<Props> = ({
         open={messageModalOpen}
         width={600}
         onCancel={handleCancel}
-        closeIcon={<FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }}/>}
+        closeIcon={
+          <FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }} />
+        }
         mask={false}
         footer={
           <Button
             typoVariant="title-semi-button"
-            endIcon={<ChevronRight className="fill-white -mt-1"/>}
+            endIcon={<ChevronRight className="fill-white -mt-1" />}
             className="w-full hover:bg-main-hoverOrange sm:w-[206px] h-[45px] shadow-buttonShadow4 pt-1"
             onClick={() => onclickHandel()}
           >
@@ -135,17 +149,12 @@ export const FooterCard: FC<Props> = ({
         }
       >
         <div className="ml-4 mb-2 flex gap-[17.5px] flex-wrap sm:flex-row">
-          <Image
-            src={"/" + path}
-            width={70}
-            height={70}
-            alt="image"
-          />
+          <Image src={'/' + path} width={70} height={70} alt="image" />
           <Typography
             variant="heading5"
             classname="text-main-deepBlue text-center pt-6"
           >
-            {"Send a Message"}
+            {'Send a Message'}
           </Typography>
         </div>
 
@@ -155,22 +164,23 @@ export const FooterCard: FC<Props> = ({
             variant="title3"
             classname="text-main-deepBlue text-start"
           >
-            {"YOUR NAME"}
+            {'YOUR NAME'}
           </Typography>
-          {
-              emptyName ? <Typography
-              variant="title3"
-              classname="text-main-orange text-end"
-            >
-              {"REQUIRED"}
-            </Typography> : null
+          {emptyName ? (
+            <Typography variant="title3" classname="text-main-orange text-end">
+              {'REQUIRED'}
+            </Typography>
+          ) : null}
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            onChange={handleChange}
+            className={
+              emptyName === false
+                ? 'h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox'
+                : 'h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-2 border-main-orange'
             }
-          <Input type="text" id="name" name="name" onChange={handleChange} 
-          className= {
-            emptyName === false ? 
-            "h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox" : 
-            "h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-2 border-main-orange"
-          }
           />
         </div>
         <div className="ml-2 mb-2 mt-6 flex gap-[5px] flex flex-col">
@@ -179,63 +189,74 @@ export const FooterCard: FC<Props> = ({
               variant="title3"
               classname="text-main-deepBlue text-start"
             >
-              {"EMAIL"}
+              {'EMAIL'}
             </Typography>
-            {
-              emptyEmail ? <Typography
-              variant="title3"
-              classname="text-main-orange text-end"
-            >
-              {"REQUIRED"}
-            </Typography> : null
-            }
+            {emptyEmail ? (
+              <Typography
+                variant="title3"
+                classname="text-main-orange text-end"
+              >
+                {'REQUIRED'}
+              </Typography>
+            ) : null}
           </div>
-          <Input type="text" id="email" name="email" onChange={handleChange} 
-          className= {
-            emptyEmail === false ? 
-            "h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox" : 
-            "h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-2 border-main-orange"
-          }
+          <Input
+            type="text"
+            id="email"
+            name="email"
+            onChange={handleChange}
+            className={
+              emptyEmail === false
+                ? 'h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox'
+                : 'h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-2 border-main-orange'
+            }
           />
         </div>
         <div className="ml-2 mb-2 mt-6 flex gap-[5px] flex flex-col">
-        <div className="flex flex-row">
-          <Typography
-            variant="title3"
-            classname="text-main-deepBlue text-start"
-          >
-            {"COMPANY"}
-          </Typography>
-          <Typography
-            variant="title3"
-            classname="text-main-modalTitleSecond text-start ml-1"
-          >
-            {"(OPTIONAL)"}
-          </Typography>
+          <div className="flex flex-row">
+            <Typography
+              variant="title3"
+              classname="text-main-deepBlue text-start"
+            >
+              {'COMPANY'}
+            </Typography>
+            <Typography
+              variant="title3"
+              classname="text-main-modalTitleSecond text-start ml-1"
+            >
+              {'(OPTIONAL)'}
+            </Typography>
           </div>
-          <Input type="text" id="company" name="company" onChange={handleChange} className="h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox"/>
+          <Input
+            type="text"
+            id="company"
+            name="company"
+            onChange={handleChange}
+            className="h-[45px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-semibold border-main-textBox"
+          />
         </div>
         <div className="ml-2 mb-4 mt-6 flex gap-[5px] flex flex-col">
           <Typography
             variant="title3"
             classname="text-main-deepBlue text-start"
           >
-            {"MESSAGE"}
+            {'MESSAGE'}
           </Typography>
-          {
-              emptyMessage ? <Typography
-              variant="title3"
-              classname="text-main-orange text-end"
-            >
-              {"REQUIRED"}
-            </Typography> : null
+          {emptyMessage ? (
+            <Typography variant="title3" classname="text-main-orange text-end">
+              {'REQUIRED'}
+            </Typography>
+          ) : null}
+          <Input.TextArea
+            autoSize={{ minRows: 7, maxRows: 7 }}
+            id="message"
+            name="message"
+            onChange={handleChange}
+            className={
+              emptyMessage === false
+                ? 'text-[16px] pt-2 h-[200px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-sans border-main-textBox'
+                : 'text-[16px] pt-2 h-[200px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-sans border-2 border-main-orange'
             }
-          <Input.TextArea autoSize={{ minRows: 7, maxRows: 7 }}  id="message" name="message" onChange={handleChange} 
-          className= {
-            emptyMessage === false ? 
-            "text-[16px] pt-2 h-[200px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-sans border-main-textBox" : 
-            "text-[16px] pt-2 h-[200px] bg-main-textBox text-main-modalTitle rounded-[23px] pl-3 pr-3 font-sans border-2 border-main-orange"
-          }
           />
         </div>
       </Modal>
@@ -247,112 +268,106 @@ export const FooterCard: FC<Props> = ({
         open={contactModalOpen}
         width={400}
         onCancel={handleCancel}
-        closeIcon={<FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }}/>}
+        closeIcon={
+          <FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }} />
+        }
         footer={null}
         mask={false}
       >
         <div className="ml-2 flex gap-[17.5px]">
-          <Image
-            src={"/" + path}
-            width={189}
-            height={113}
-            alt="image"
-          />
+          <Image src={'/' + path} width={189} height={113} alt="image" />
         </div>
         <div className="ml-2 flex gap-[5px] flex flex-row justify-between">
-        <Typography
+          <Typography
             variant="heading5"
             classname="text-main-deepBlue text-center pt-6"
           >
-            {"Email"}
-        </Typography>
-        {
-          show === false  ?
+            {'Email'}
+          </Typography>
+          {show === false ? (
             <Typography
               variant="label1"
               classname="text-main-orange text-center mt-7"
             >
               {copySuccess}
             </Typography>
-          : null
-        }
+          ) : null}
         </div>
         <div className="ml-2 mb-2 mt-2 flex gap-[5px] flex flex-col">
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 flex items-center">
-            <Typography
-              variant="title4"
-              classname="text-main-deepBlue pl-5"
-              >
-                {"hello@airlystudio.com"}
+            <Typography variant="title4" classname="text-main-deepBlue pl-5">
+              {'hello@airlystudio.com'}
             </Typography>
 
-            <FontAwesomeIcon onClick={() => {copyToClipBoard('hello@airlystudio.com'),
-            setTimeout(() => {
-              setShow(true)
-              }, 1500), setShow(false) }
-            } 
-            icon={faCopy} style={{ fontSize: 20, color: "#f97066", cursor: 'pointer' }}/>
+            <FontAwesomeIcon
+              onClick={() => {
+                copyToClipBoard('hello@airlystudio.com'),
+                  setTimeout(() => {
+                    setShow(true);
+                  }, 1500),
+                  setShow(false);
+              }}
+              icon={faCopy}
+              style={{ fontSize: 20, color: '#f97066', cursor: 'pointer' }}
+            />
           </div>
         </div>
         <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
           <div className="-ml-8 -mr-6 border-[0.5px] border-main-textBox"></div>
-            <Typography
-                variant="heading5"
-                classname="text-main-deepBlue pt-6"
-              >
-                {"Phone"}
-            </Typography>
-            <Typography
-                variant="title5"
-                classname="text-main-deepBlue font-medium"
-              >
-                Along with direct phone call,
-                <span className="font-bold"> WhatsApp </span>
-                and  
-                <span className="font-bold"> Telegram </span>
-                are also available
-            </Typography>
-          
+          <Typography variant="heading5" classname="text-main-deepBlue pt-6">
+            {'Phone'}
+          </Typography>
+          <Typography
+            variant="title5"
+            classname="text-main-deepBlue font-medium"
+          >
+            Along with direct phone call,
+            <span className="font-bold"> WhatsApp </span>
+            and
+            <span className="font-bold"> Telegram </span>
+            are also available
+          </Typography>
+
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3"
-              >
-                {"Operations"}
+              classname="text-main-deepBlue text-start pl-4"
+            >
+              {'Operations'}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
-              >
-                {"+880 189154 7896"}
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-3"
+            >
+              {'+880 189154 7896'}
             </Typography>
           </div>
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3"
-              >
-                {"Dev Team"}
+              classname="text-main-deepBlue text-start pl-4"
+            >
+              {'Dev Team'}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
-              >
-                {"+880 16 1699 2233"}
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-3"
+            >
+              {'+880 16 1699 2233'}
             </Typography>
           </div>
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-2 mt-2 flex items-center">
             <Typography
               variant="title5"
-              classname="text-main-deepBlue text-start pl-3"
-              >
-                {"Design Team"}
+              classname="text-main-deepBlue text-start pl-4"
+            >
+              {'Design Team'}
             </Typography>
             <Typography
               variant="title4"
-              classname="text-main-deepBlue text-end whitespace-nowrap pr-1"
-              >
-                {"+880 18 9154 7896"}
+              classname="text-main-deepBlue text-end whitespace-nowrap pr-3"
+            >
+              {'+880 18 9154 7896'}
             </Typography>
           </div>
         </div>
@@ -365,13 +380,15 @@ export const FooterCard: FC<Props> = ({
         open={openThankyouCard}
         width={400}
         onCancel={handleCancel}
-        closeIcon={<FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }}/>}
+        closeIcon={
+          <FontAwesomeIcon icon={faCircleXmark} style={{ fontSize: 20 }} />
+        }
         footer={null}
         mask={false}
       >
         <div className="ml-2 mb-2 mt-4 flex flex-wrap sm:flex-column justify-center">
           <Image
-            src={"/hearth.svg"}
+            src={'/hearth.svg'}
             width={105}
             className="justify-center"
             height={105}
@@ -383,17 +400,24 @@ export const FooterCard: FC<Props> = ({
             variant="heading5"
             classname="text-main-deepBlue text-center sm:items-center xl:text-start"
           >
-            {"Thank you!"}
+            {'Thank you!'}
           </Typography>
           <Typography
             variant="title6"
             classname="w-[264px] text-main-deepBlue text-center sm:items-center xl:text-center"
           >
-            {"Thank you for sending us your message. We will get back to you as soon as possible."}
+            {
+              'Thank you for sending us your message. We will get back to you as soon as possible.'
+            }
           </Typography>
           <Button
             typoVariant="title-semi-button"
-            endIcon={<FontAwesomeIcon icon={faCheck} style={{ fontSize: 15, paddingBottom: 5 }}/>}
+            endIcon={
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ fontSize: 15, paddingBottom: 5 }}
+              />
+            }
             className="w-full hover:bg-main-hoverOrange sm:w-[206px] h-[45px] shadow-buttonShadow4 pt-1"
             onClick={() => setOpenThankyouCard(false)}
           >
