@@ -87,16 +87,19 @@ export const Header = () => {
               >
                 <Button
                   variant="primary"
-                  className="hover:bg-main-hoverOrange w-[140px] h-[40px] sm:w-[200px] h-[40px]"
+                  className="w-[90px] h-[40px] hover:bg-main-hoverOrange 414:w-[140px] 414:h-[40px] sm:w-[200px] h-[40px]"
                 >
-                  Portfolio
+                  <span className="text-[10px] 414:text-[16px]">Portfolio</span>
+                  {/* Portfolio */}
                 </Button>
               </Link>
             </div>
-            <div className="flex text-center 1xl:hidden flex text-center justify-center">
+            <div className="flex text-center justify-center 1xl:hidden">
               <i className="w-[1px] h-[40px] border-r-2 border-lightBlue mr-3 mt-3" />
+            </div>
+            <div className="flex text-center justify-center 1xl:hidden">
               <div
-                className="flex text-center"
+                className="flex text-center mt-2"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <MobileCancel /> : <MobileMenu />}
