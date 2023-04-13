@@ -55,7 +55,7 @@ export const SectionTwo = () => {
           src="/vscode@2x.png"
           draggable={false}
         />
-        <div className="absolute left-0 top-[420px] sm:left-[47px] sm:top-[300px] flex flex-col max-w-[494px] w-full z-30 px-5 sm:px-0 xl:left-[247px]">
+        <div className="flex flex-col max-w-[494px] w-full px-5 absolute left-0 z-30 top-[420px] sm:left-[47px] sm:top-[300px] sm:px-0 xl:left-[247px]">
           <Typography variant="heading1" classname="text-white leading-normal">
             Development
           </Typography>
@@ -82,9 +82,9 @@ export const SectionTwo = () => {
               <Button
                 typoVariant="title-semi-button"
                 endIcon={<ChevronRight className="fill-white" />}
-                className=" w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
+                className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
               >
-                Start a Design Project
+                Start a Dev Project
               </Button>
             </Link>
           </div>

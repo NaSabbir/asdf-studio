@@ -30,7 +30,7 @@ export const SectionThree = () => {
           src="/instagram@2x.png"
           draggable={false}
         />
-        <div className="absolute top-[530px] sm:top-[192px] flex flex-col w-[320px] sm:w-[400px] sm:left-[152px] z-30 xl:left-[442px]">
+        <div className="flex flex-col max-w-[494px] w-full px-5 absolute z-30 top-[530px] sm:top-[192px] sm:w-[400px] sm:left-[152px] sm:px-0 xl:left-[442px] xl:px-0">
           <Typography
             variant="heading1"
             classname="text-main-deepBlue leading-normal"
@@ -61,7 +61,7 @@ export const SectionThree = () => {
                 endIcon={<ChevronRight className="fill-white" />}
                 className="w-full hover:bg-main-hoverOrange sm:w-[300px] h-[45px] shadow-buttonShadow4"
               >
-                Start a Design Project
+                Start a Project
               </Button>
             </Link>
           </div>

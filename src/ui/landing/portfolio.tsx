@@ -53,7 +53,7 @@ export const Portfolio = () => {
                 endIcon={<ChevronRight className="fill-white" />}
                 className="w-[300px] max-w-[300px] h-[45px] shadow-buttonShadow4 mb-5 hover:bg-main-hoverOrange xl:hidden"
               >
-                Our Portfolio
+                EXPLORE Portfolio
               </Button>
             </Link>
           </div>
@@ -75,7 +75,7 @@ export const Portfolio = () => {
                 endIcon={<ChevronRight className="fill-white" />}
                 className="w-[300px] hover:bg-main-hoverOrange hidden xl:block max-w-[300px] h-[45px] shadow-buttonShadow4 mt-5"
               >
-                Our Portfolio
+                EXPLORE Portfolio
               </Button>
             </Link>
           </div>
@@ -105,7 +105,7 @@ export const Portfolio = () => {
             endIcon={<ChevronRight className="fill-white" />}
             className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:hidden"
           >
-            OUR PORTFOLIO
+            EXPLORE PORTFOLIO
           </Button>
         </Link>
       </div>

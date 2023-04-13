@@ -124,7 +124,7 @@ export const FooterCard: FC<Props> = ({
             : window.open('https://calendly.com/airlystudio/meeting', '_blank')
         }
       >
-        {buttonText}
+        <span className="text-[15px] tracking-[1.5px]">{buttonText}</span>
       </Button>
 
       {/* modal complte */}
