@@ -59,7 +59,7 @@ export const Header = () => {
           >
             <AirlyLogo />
           </Link>
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3">
             <div className={'gap-5 hidden 1xl:flex'}>
               {NAV__LINK.map((item, index) => (
                 <Button key={index} variant="text">
@@ -95,15 +95,13 @@ export const Header = () => {
               </Link>
             </div>
             <div className="flex text-center justify-center 1xl:hidden">
-              <i className="w-[1px] h-[40px] border-r-2 border-lightBlue mr-3 mt-3" />
+              <i className="w-[1px] h-[40px] border-r-2 border-lightBlue mr-3" />
             </div>
-            <div className="flex text-center justify-center 1xl:hidden">
-              <div
-                className="flex text-center mt-2"
-                onClick={() => setNavbar(!navbar)}
-              >
-                {navbar ? <MobileCancel /> : <MobileMenu />}
-              </div>
+            <div
+              className="flex text-center 1xl:hidden"
+              onClick={() => setNavbar(!navbar)}
+            >
+              {navbar ? <MobileCancel /> : <MobileMenu />}
             </div>
           </div>
         </div>
