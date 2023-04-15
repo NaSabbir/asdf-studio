@@ -197,7 +197,7 @@ export const Footer = () => {
           height={351}
           style={{ width: 1080, height: 351 }}
           alt="footer"
-          className="mx-auto hidden sm:block"
+          className="mx-auto hidden object-cover sm:block"
           draggable={false}
         />
         <Image

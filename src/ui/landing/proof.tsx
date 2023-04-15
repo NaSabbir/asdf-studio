@@ -55,11 +55,11 @@ export const Proof = () => {
         <object
           type="image/svg+xml"
           data="/process.svg"
-          className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden sm:block top-[175px]"
+          className="w-[1063px] h-[808px] left-1/2 transform absolute -translate-x-1/2 hidden 430:block sm:block top-[175px]"
         ></object>
         <Image
           alt="mountain mobile"
-          className="left-[190px] transform absolute -translate-x-1/2 top-[270px] max-w-[900px] 420:max-w-[1000px] sm:hidden z-20"
+          className="left-[190px] transform absolute -translate-x-1/2 top-[270px] max-w-[900px] 420:max-w-[1000px] 430:hidden sm:hidden z-20"
           // className="-translate-x-1/2 left-1/2 absolute top-[270px] max-w-[850px] sm:hidden"
           src="/mountain-mobile@2x.png"
           width={1000}
