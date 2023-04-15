@@ -38,7 +38,7 @@ export const Portfolio = () => {
         {/* for tablet & phone */}
 
         <div className="flex w-full mb-10 x:w-[421px] x:hidden flex flex-col gap-5 x:gap-[24.5px] order-1 xl:order-6 x:mb-0 mb-2.5">
-          <Typography classname="text-[22px] sm:text-[40px] font-medium leading-normal x:leading-[45.6px] -tracking-[0.45px] x:-tracking-[0.82px] text-main-deepBlue text-center x:text-start">
+          <Typography classname="text-[22px] mx-[30px] sm:text-[40px] font-medium leading-normal x:leading-[45.6px] -tracking-[0.45px] x:-tracking-[0.82px] text-main-deepBlue text-center x:text-start">
             We partner with clients and navigate them through the challenges of
             creating innovative digital products.
           </Typography>

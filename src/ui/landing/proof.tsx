@@ -22,7 +22,7 @@ export const Proof = () => {
       <div
         id="Process"
         className={[
-          'relative h-[850px] max-w-[1180px] mb-[100px] sm:h-[950px] 2xl:max-w-[1260px] w-full mx-auto z-20',
+          'relative h-[850px] max-w-[1180px] mb-[100px] 420:mb-[170px] sm:h-[950px] 2xl:max-w-[1260px] w-full mx-auto z-20',
           padding,
         ].join(' ')}
       >
@@ -59,10 +59,10 @@ export const Proof = () => {
         ></object>
         <Image
           alt="mountain mobile"
-          className="left-[190px] transform absolute -translate-x-1/2 top-[270px] max-w-[900px] sm:hidden z-20"
+          className="left-[190px] transform absolute -translate-x-1/2 top-[270px] max-w-[900px] 420:max-w-[1000px] sm:hidden z-20"
           // className="-translate-x-1/2 left-1/2 absolute top-[270px] max-w-[850px] sm:hidden"
           src="/mountain-mobile@2x.png"
-          width={900}
+          width={1000}
           height={638}
           draggable={false}
         />
