@@ -18,6 +18,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PKT3RFN');
       `}
       </Script>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-RVB34B1X53"
+      ></Script>
+      <Script
+        id="google_tag_manager"
+        strategy="afterInteractive"
+        type="text/javascript"
+      >
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-RVB34B1X53');
+        `}
+      </Script>
       <Component {...pageProps} />;
     </>
   );
