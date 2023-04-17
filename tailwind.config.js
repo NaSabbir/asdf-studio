@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     screens: {
       sm: '767px', //mobile
-      x: '1024px', //tablet
-      xl: '1024px', //laptop
+      x: '1009px', //tablet | 1009px is 1024 px in ipad
+      xl: '1009px', //laptop | 1009px is 1024 px in ipad
       '1xl': '1230px', //laptop
       '2xl': '1440px', //desktop
       '5xl': '1920px', // ultra wide
