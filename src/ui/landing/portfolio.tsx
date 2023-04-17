@@ -37,7 +37,7 @@ export const Portfolio = () => {
   return (
     <Canvas classname="bg-greyBlue">
       <div
-        className="w-full relative h-[1580px] 360:h-[1770px] 414:h-[1920px] 752:h-[2150px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10"
+        className="w-full relative h-[1580px] 360:h-[1770px] 414:h-[1920px] 420:h-[1920px] 752:h-[2150px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10"
         // id="portfolio"
       >
         <span
@@ -111,7 +111,7 @@ export const Portfolio = () => {
             );
           })}
         </div>
-        <div className="relative -bottom-[850px] 360:-bottom-[1100px] 414:-bottom-[1280px] 752:-bottom-[1560px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
+        <div className="relative -bottom-[850px] 360:-bottom-[1150px] 375:-bottom-[1150px] 414:-bottom-[1300px] 420:-bottom-[1300px] 752:-bottom-[1560px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
         <Link
           href="https://airlystudio.myportfolio.com/"
           target="_blank"
