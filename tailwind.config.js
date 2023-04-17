@@ -17,6 +17,7 @@ module.exports = {
       414: '398px',
       420: '415px',
       430: '430px',
+      752: '752px',
     },
     extend: {
       fontFamily: {

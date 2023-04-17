@@ -5,29 +5,45 @@ import Link from 'next/link';
 
 export const Portfolio = () => {
   const portfolioImages = [
-    { url: 'rectangle-copy-13@2x.png', classname: 'order-2 sm:order-1' },
-    { url: 'rectangle-copy-14@2x.png', classname: 'order-3 sm:order-2' },
-    { url: 'rectangle-copy-15@2x.png', classname: 'order-4 sm:order-3' },
-    { url: 'rectangle-copy-16@2x.png', classname: 'order-5 sm:order-4' },
-    { url: 'rectangle-copy-17@2x.png', classname: 'order-6 sm:order-5' },
-    { url: 'rectangle-copy-18@2x.png', classname: 'order-7 sm:order-7' },
-    { url: 'rectangle-copy-19@2x.png', classname: 'order-8 sm:order-8' },
-    { url: 'rectangle-copy-20@2x.png', classname: 'order-9 sm:order-9' },
-    { url: 'rectangle-copy-21@2x.png', classname: 'order-10 sm:order-10' },
-    { url: 'rectangle-copy-22@2x.png', classname: 'order-11 sm:order-11' },
-    { url: 'rectangle-copy-23@2x.png', classname: 'order-12 sm:order-12' },
-    { url: 'rectangle-copy-24@2x.png', classname: 'order-[13] sm:order-[13]' },
-    { url: 'rectangle-copy-27@2x.png', classname: 'order-[16] sm:order-[16]' },
-    { url: 'rectangle-copy-25@2x.png', classname: 'order-[14] sm:order-[14]' },
-    { url: 'rectangle-copy-26@2x.png', classname: 'order-[15] sm:order-[15]' },
+    { url: 'rectangle-copy-13@2x.png', classname: 'x:order-1 order-5' },
+    { url: 'rectangle-copy-14@2x.png', classname: 'x:order-2 order-6' },
+    { url: 'rectangle-copy-15@2x.png', classname: 'x:order-3 order-3' },
+    { url: 'rectangle-copy-16@2x.png', classname: 'x:order-4 order-2' },
+    { url: 'rectangle-copy-17@2x.png', classname: 'x:order-5 order-[12]' },
+    { url: 'rectangle-copy-18@2x.png', classname: 'x:order-7 order-7' },
+    { url: 'rectangle-copy-19@2x.png', classname: 'x:order-8 order-8' },
+    { url: 'rectangle-copy-20@2x.png', classname: 'x:order-9 order-9' },
+    { url: 'rectangle-copy-21@2x.png', classname: 'x:order-10 order-10' },
+    { url: 'rectangle-copy-22@2x.png', classname: 'x:order-11 order-11' },
+    { url: 'rectangle-copy-23@2x.png', classname: 'x:order-12 order-4' },
+    {
+      url: 'rectangle-copy-24@2x.png',
+      classname: 'x:order-[13] order-[13]',
+    },
+    {
+      url: 'rectangle-copy-27@2x.png',
+      classname: 'x:order-[16] order-1',
+    },
+    {
+      url: 'rectangle-copy-25@2x.png',
+      classname: 'x:order-[14] order-[14]',
+    },
+    {
+      url: 'rectangle-copy-26@2x.png',
+      classname: 'x:order-[15] order-[15]',
+    },
   ];
 
   return (
     <Canvas classname="bg-greyBlue">
       <div
-        className="w-full relative h-[1730px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10"
-        id="portfolio"
+        className="w-full relative h-[1580px] 360:h-[1770px] 414:h-[1920px] 752:h-[2150px] sm:h-[1910px] x:h-[1690px] xl:h-[1690px] z-10"
+        // id="portfolio"
       >
+        <span
+          className="z-index-[50] relative top-0 x:top-[422px]"
+          id="portfolio"
+        ></span>
         <div className="w-fit mx-auto">
           <Typography variant="heading1" classname="text-main-deepBlue">
             Portfolio
@@ -42,6 +58,7 @@ export const Portfolio = () => {
             We partner with clients and navigate them through the challenges of
             creating innovative digital products.
           </Typography>
+
           <div className={'flex w-full justify-center sm: top-[180px]'}>
             <Link
               href="https://airlystudio.myportfolio.com/"
@@ -94,7 +111,7 @@ export const Portfolio = () => {
             );
           })}
         </div>
-        <div className="relative -bottom-[1150px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
+        <div className="relative -bottom-[850px] 360:-bottom-[1100px] 414:-bottom-[1280px] 752:-bottom-[1560px] h-80 bg-gradient-to-t from-[#d3e9f7] sm:hidden"></div>
         <Link
           href="https://airlystudio.myportfolio.com/"
           target="_blank"
@@ -103,7 +120,7 @@ export const Portfolio = () => {
           <Button
             typoVariant="title-semi-button"
             endIcon={<ChevronRight className="fill-white" />}
-            className="w-full mb-2 max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:hidden"
+            className="w-full max-w-[250px] 360:max-w-[300px] sm:max-w-[300px] h-[45px] shadow-buttonShadow4 absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:hidden"
           >
             EXPLORE PORTFOLIO
           </Button>
