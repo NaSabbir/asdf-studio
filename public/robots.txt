@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://airlystudio.com
+
+# Sitemaps
+Sitemap: https://airlystudio.com/sitemap.xml
