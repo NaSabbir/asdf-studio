@@ -30,7 +30,7 @@ export const CommentCard: FC<Props> = ({
 
   return (
     // shadow-commentShadow
-    <div className="max-w-[320px] w-full sm:max-w-[396px] h-[263px] sm:h-[250px] flex flex-col bg-white border-border-comment border-[0.8px] rounded-[14px]  justify-between pt-[26px] pb-[23px] mx-auto">
+    <div className="max-w-[320px] w-full sm:max-w-[396px] h-[520px] sm:h-[470px] flex flex-col bg-white border-border-comment border-[0.8px] rounded-[14px]  justify-between pt-[26px] pb-[23px] mx-auto">
       <div className="flex flex-col gap-[17.4px] px-[14.6px]">
         <CommentSVG fill={colorMapping[color]} />
         <Typography variant="title1" classname="text-main-deepBlue mx-[9.6px]">

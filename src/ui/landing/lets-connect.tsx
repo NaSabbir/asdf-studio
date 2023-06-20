@@ -39,7 +39,7 @@ const ClientComment = React.forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className="relative h-[397px] sm:h-[300px]">
+    <div className="relative h-[660px] sm:h-[520px]">
       <div className="max-w-full w-full sm:max-w-[1656px] absolute left-1/2 transform -translate-x-1/2">
         <Slider ref={(slider) => (ref.current = slider)} {...settings}>
           {userComments.map(({ color, comment, name, position }, index) => {

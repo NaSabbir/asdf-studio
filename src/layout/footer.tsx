@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
         <div className="h-[45px]" />
         <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-around">
-          <FooterCard
+          {/* <FooterCard
             image={{
               path: 'calendar@2x.png',
               width: 188,
@@ -71,6 +71,18 @@ export const Footer = () => {
               height: 112,
             }}
             title="Email & Phone"
+            buttonText="Contact Now"
+            desc="Send us an email about your project and we will get back to you as soon as possible."
+            type="contact"
+          /> */}
+
+          <FooterCard
+            image={{
+              path: 'message@2x.png',
+              width: 112,
+              height: 112,
+            }}
+            title="Send Email"
             buttonText="Contact Now"
             desc="Send us an email about your project and we will get back to you as soon as possible."
             type="contact"
@@ -179,14 +191,14 @@ export const Footer = () => {
               </Typography>
             </Link>
           </div>
-          <div className="max-w-[322px] w-full mx-auto text-center mt-[24px]">
+          {/* <div className="max-w-[322px] w-full mx-auto text-center mt-[24px]">
             <Typography variant="body2" classname="text-main-deepBlue">
               44/A Judge Court Road, Cumilla, Bangladesh
             </Typography>
-          </div>
+          </div> */}
           <div className="max-w-[477px] w-full mx-auto text-center mt-[15px]">
             <Typography variant="body3" classname="text-main-deepBlue">
-              © 2014-2023 Airly Studio, LLC. All rights reserved. Trademarks and
+              © 2019-2023 [asdf]studio, LLC. All rights reserved. Trademarks and
               brands are the property of their respective owners.
             </Typography>
           </div>

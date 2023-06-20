@@ -16,10 +16,10 @@ const NAV__LINK = [
     path: 'development',
     display: 'DEVELOPMENT',
   },
-  {
-    path: 'marketing',
-    display: 'MARKETING',
-  },
+  // {
+  //   path: 'marketing',
+  //   display: 'MARKETING',
+  // },
   {
     path: 'clients',
     display: 'CLIENTS',
@@ -178,7 +178,7 @@ export const Header = () => {
             <li className="flex items-center justify-center">
               <a
                 className="flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white"
-                href="https://dribbble.com/airlystudio"
+                href="https://dribbble.com/asdfstudio"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -188,7 +188,7 @@ export const Header = () => {
             <p className="cursor-default flex items-center mr-[5px] ml-[5px]">
               /
             </p>
-            <li className="flex items-center justify-center">
+            {/* <li className="flex items-center justify-center">
               <a
                 className="flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white"
                 href="https://twitter.com/airlystudio"
@@ -200,11 +200,11 @@ export const Header = () => {
             </li>
             <p className="cursor-default flex items-center mr-[5px] ml-[5px]">
               /
-            </p>
+            </p> */}
             <li className="flex items-center justify-center">
               <a
                 className="flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white"
-                href="https://www.behance.net/airlystudio"
+                href="https://www.behance.net/asdfstudio1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -217,11 +217,11 @@ export const Header = () => {
             <li className="flex items-center justify-center">
               <a
                 className="flex items-center h-[12px] text-[12px] leading-normal tracking-[0.2px] mt-1 border-b-2 border-main-blue hover:border-white"
-                href="https://www.linkedin.com/company/airlystudio"
+                href="https://www.upwork.com/agencies/1670868278460870656/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LINKEDIN
+                UPWORK 
               </a>
             </li>
           </div>

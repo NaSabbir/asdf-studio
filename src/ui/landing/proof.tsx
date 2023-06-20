@@ -121,7 +121,7 @@ export const Proof = () => {
                 draggable={false}
               />
             </div>
-            <div className="flex gap-[15px] absolute sm:relative top-[415px] sm:top-0 left-1/2 transform -translate-x-1/2 sm:left-[0px] x:left-[0px] xl:left-[0px]">
+            <div className="flex gap-[15px] absolute sm:relative top-[675px] sm:top-0 left-1/2 transform -translate-x-1/2 sm:left-[0px] x:left-[0px] xl:left-[0px]">
               <IconButton
                 onClick={handleLeftArrowClick}
                 type="circle"

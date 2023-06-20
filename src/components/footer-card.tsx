@@ -297,12 +297,12 @@ export const FooterCard: FC<Props> = ({
         <div className="ml-2 mb-2 mt-2 flex gap-[5px] flex flex-col">
           <div className="h-[45px] bg-main-lightestBlue rounded-[23px] border-[1px] border-main-lightBlue flex justify-between pr-3 flex items-center">
             <Typography variant="title4" classname="text-main-deepBlue pl-5">
-              {'hello@airlystudio.com'}
+              {'emily.c.lien@gmail.com'}
             </Typography>
 
             <FontAwesomeIcon
               onClick={() => {
-                copyToClipBoard('hello@airlystudio.com'),
+                copyToClipBoard('emily.c.lien@gmail.com'),
                   setTimeout(() => {
                     setShow(true);
                   }, 1500),
@@ -313,7 +313,7 @@ export const FooterCard: FC<Props> = ({
             />
           </div>
         </div>
-        <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
+        {/* <div className="ml-2 mb-2 mt-4 flex gap-[5px] flex flex-col">
           <div className="-ml-8 -mr-6 border-[0.5px] border-main-textBox"></div>
           <Typography variant="heading5" classname="text-main-deepBlue pt-6">
             {'Phone'}
@@ -371,7 +371,7 @@ export const FooterCard: FC<Props> = ({
               {'+880 18 9154 7896'}
             </Typography>
           </div>
-        </div>
+        </div> */}
       </Modal>
 
       {/* thank you modal */}

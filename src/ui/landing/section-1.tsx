@@ -182,7 +182,7 @@ export const SectionOne = () => {
               className="flex items-center top-[25px] right-[107px] absolute hidden sm:block sm:top-[70px] sm:right-[500px] x:top-[70px] x:right-[700px] xl:right-[675px] xl:top-[120px] w-[130px] h-[23.9px]"
               endIcon={<ArrowRight className="fill-main-red text-[10.5px]" />}
             >
-              ILLSUTRATIONS
+              Illustrations
             </Button>
           </Link>
         </div>

@@ -15,7 +15,7 @@ export const SectionThree = () => {
       classname="bg-white relative -top-[70px] sm:-mt-[250px]"
       bottomComp={BottomComp}
     >
-      <div
+      {/* <div
         id="marketing"
         className={[
           'mx-auto w-full relative h-[1550px] sm:h-[1150px] z-10 max-w-mobile  sm:max-w-desktop-s',
@@ -98,13 +98,7 @@ export const SectionThree = () => {
           src="/mobile-instagram@2x.png"
           draggable={false}
         />
-        {/* <Image
-          className="absolute top-[534px] left-[330px] z-0 hidden sm:block left-[100px] sm:top-[674px] x:left-[200px] xl:left-[400px] xl:top-[584px]"
-          width={642}
-          height={364}
-          alt="google image"
-          src="/assets/landing/Marketing/google@2x.png"
-        /> */}
+
         <object
           type="image/svg+xml"
           data="/mareting.svg"
@@ -118,8 +112,17 @@ export const SectionThree = () => {
           src="/mobile-google@2x.png"
           draggable={false}
         />
-      </div>
+      </div> */}
       <OurClients />
     </Canvas>
   );
 };
+
+
+        {/* <Image
+          className="absolute top-[534px] left-[330px] z-0 hidden sm:block left-[100px] sm:top-[674px] x:left-[200px] xl:left-[400px] xl:top-[584px]"
+          width={642}
+          height={364}
+          alt="google image"
+          src="/assets/landing/Marketing/google@2x.png"
+        /> */}

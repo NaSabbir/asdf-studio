@@ -39,14 +39,14 @@ export const OurClients = () => {
 
   const establishiedClients = [
     {
-      url: 'toyota@2x.png',
-      width: 189,
-      height: 38,
+      url: 'salesHood.png',
+      width: 90,
+      height: 90,
     },
     {
-      url: 'mars@2x.png',
+      url: 'westPro.png',
       width: 94,
-      height: 38,
+      height: 58,
     },
     {
       url: 'webflow@2x.png',
@@ -54,35 +54,35 @@ export const OurClients = () => {
       height: 38,
     },
     {
-      url: 'honda@2x.png',
-      width: 177,
-      height: 38,
+      url: 'ars-logo.png',
+      width: 87,
+      height: 98,
     },
     {
-      url: 'citi@2x.png',
-      width: 74,
-      height: 38,
+      url: 'planpop.png',
+      width: 124,
+      height: 88,
     },
 
     {
-      url: 'vaillant@2x.png',
+      url: 'StoryStudioLogo.webp',
       width: 96,
       height: 38,
     },
     {
       url: 'liquitex@2x.png',
       width: 110,
-      height: 38,
+      height: 68,
     },
     {
       url: 'ione@2x.png',
       width: 105,
-      height: 32,
+      height: 62,
     },
     {
       url: 'navigate@2x.png',
       width: 184,
-      height: 32,
+      height: 62,
     },
     {
       url: 'tuon@2x.png',
@@ -90,9 +90,9 @@ export const OurClients = () => {
       height: 32,
     },
     {
-      url: 'vint@2x.png',
+      url: 'colArt.png',
       width: 125,
-      height: 30,
+      height: 90,
     },
   ];
 
@@ -100,7 +100,7 @@ export const OurClients = () => {
     <div
       id="clients"
       className={[
-        'max-w-mobile sm:max-w-desktop-s mx-auto w-full relative z-10 xl:-mt-[120px]',
+        'max-w-mobile sm:max-w-desktop-s mx-auto w-full relative z-10 mt-[120px] xl:mt-[160px]',
         padding,
       ].join(' ')}
     >
@@ -111,7 +111,7 @@ export const OurClients = () => {
       </div>
       <div className="sm:h-[40px]" />
       <div className="flex flex-col gap-[30px] sm:gap-[38px] max-w-full sm:max-w-945 w-full mx-auto">
-        <div className="flex flex-col gap-5 sm:gap-[25px] w-full">
+        {/* <div className="flex flex-col gap-5 sm:gap-[25px] w-full">
           <Typography
             variant="title-semi"
             classname="uppercase tracking-[3.75px] text-main-grey text-center sm:text-center x:text-center xl:text-start"
@@ -132,15 +132,15 @@ export const OurClients = () => {
               />
             ))}
           </div>
-        </div>
-        <div className="border border-main-lightBlue w-[100%] mx-auto" />
+        </div> */}
+        {/* <div className="border border-main-lightBlue w-[100%] mx-auto" /> */}
         <div className="flex flex-col gap-5 sm:gap-[25px] w-full">
-          <Typography
+          {/* <Typography
             variant="title-semi"
             classname="uppercase tracking-[3.75px] text-main-grey text-center sm:text-center x:text-center xl:text-start"
           >
             Established Brands we have worked with
-          </Typography>
+          </Typography> */}
           <div className="flex sm:gap-x-[35px] sm:gap-y-[25px] gap-5 flex-wrap justify-center items-center sm:justify-center">
             {establishiedClients.map(({ url, width, height }, index) => (
               <Image
