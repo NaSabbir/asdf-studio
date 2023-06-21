@@ -23,8 +23,8 @@ export const userComments: Data[] = [
     color: "orange",
     comment:
       "[asdf]studio is SUCH a pleasure to work with. Not only do they complete work in a timely manner but go above and beyond to make sure the work is quality work. I would recommend them to anyone looking for a freehand designer that is willing to take on all sorts of projects and will continue to work with her in the future. So happy I came across [asdf]studio’s work!",
-    name: "",
-    position: "",
+    name: "Ori Swiatkowski",
+    position: "Creative Producer, Hearst StoryStudio",
   },
   {
     color: "green",

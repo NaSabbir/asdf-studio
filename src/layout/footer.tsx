@@ -78,7 +78,7 @@ export const Footer = () => {
 
           <FooterCard
             image={{
-              path: 'message@2x.png',
+              path: 'email@2x.png',
               width: 112,
               height: 112,
             }}
