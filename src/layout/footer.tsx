@@ -13,6 +13,7 @@ export const Footer = () => {
           padding,
         ].join(' ')}
       >
+        <div className="flex flex-col sm:flex-row ">
         <div className="flex flex-col max-w-[585px] w-full gap-[13px] sm:gap-[6.3px] z-30 items-center sm:items-start sm:ml-[30px]">
           <div className="relative w-fit">
             <Typography
@@ -41,7 +42,8 @@ export const Footer = () => {
           </Typography>
         </div>
         <div className="h-[45px]" />
-        <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-around">
+        <div className="hidden sm:block border border-main-lightBlue h-[323px] mx-[50px] justify-evenly" />
+        <div className="flex gap-[37.5px] flex-wrap sm:flex-row justify-around pr-4">
           {/* <FooterCard
             image={{
               path: 'calendar@2x.png',
@@ -83,10 +85,11 @@ export const Footer = () => {
               height: 112,
             }}
             title="Send Email"
-            buttonText="Contact Now"
+            buttonText="EMAIL"
             desc="Send us an email about your project and we will get back to you as soon as possible."
             type="contact"
           />
+        </div>
         </div>
 
         <div className="flex flex-col mt-[33px] sm:mt-[52px]">
